@@ -68,8 +68,8 @@ var projectsInfo = {
 }
 
 var putBack = function () {
-  document.querySelector('#container').style.zIndex = '-2'
-  getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
+    document.querySelector('#container').style.zIndex = '-2'
+    document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 }
 

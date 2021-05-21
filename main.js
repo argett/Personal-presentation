@@ -74,13 +74,13 @@ for (var i = 0; i < infoBubble.length; ++i) {
   infoBubble[i].addEventListener('click', putFront)
 }
 
-var putBack = function () {
+putBack = function () {
   document.querySelector('#container').style.zIndex = '-2'
   document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 }
 
-var putFront = function (evt) {
+putFront = function (evt) {
   document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
 

@@ -77,12 +77,12 @@ var putFront = function (evt) {
   getElementsByTagName('a-scene')[0].style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
 
-  console.log('Camera move avant changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
+  console.log('id = ' + evt.currentTarget.id)
   var selectedProject = this.projectsInfo[evt.currentTarget.id]
+  console.log('selectedProject = ' + selectedProject)
   document.querySelector('#title').innerHTML = selectedProject.title
   document.querySelector('#projectDescription').innerHTML = selectedProject.description
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
-  console.log('Camera move après changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
 }
 
 var startExperienteBtn = document.querySelector('#start_experience')

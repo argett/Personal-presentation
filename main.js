@@ -1,4 +1,5 @@
 'use strict'
+
 var projectsInfo = {
   M1_Pa8: {
     title: 'Projet a 8',
@@ -68,12 +69,12 @@ var projectsInfo = {
 
 var putBack = function () {
   document.querySelector('#container').style.zIndex = '-2'
-  document.getElementByTagName('a-scene').style.zIndex = 'auto'
+  document.getElementsByTagName[0]('a-scene').style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 }
 
 var putFront = function (evt) {
-  document.getElementByTagName('a-scene').style.zIndex = '-2'
+  document.getElementsByTagName[0]('a-scene').style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
 
   console.log('Camera move avant changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))

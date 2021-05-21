@@ -74,14 +74,21 @@ var putBack = function () {
 }
 
 var putFront = function (evt) {
-    document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
+  document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
-
-  console.log('id = ' + evt.currentTarget.id)
-  var selectedProject = this.projectsInfo[evt.currentTarget.id]
-  console.log('selectedProject = ' + selectedProject)
+ /*
+  var selectedProject = projectsInfo[evt.currentTarget.id]
   document.querySelector('#title').innerHTML = selectedProject.title
   document.querySelector('#projectDescription').innerHTML = selectedProject.description
+  document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
+*/
+  console.log('id = ' + evt.currentTarget.id)
+  var selectedProject = projectsInfo[evt.currentTarget.id]
+  var titre = document.getElementById('title')
+  console.log('titre = ' + titre)
+  var descriptionBulle = document.getElementById('projectDescription')
+  titre.innerHTML = JSON.stringify(selectedProject.title);
+  descriptionBulle.innerText = JSON.stringify(selectedProject.description);
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
 }
 

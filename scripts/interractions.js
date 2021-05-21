@@ -25,8 +25,8 @@ AFRAME.registerComponent('interractions', {
   fadeBackgroundEl.getObject3D('mesh').material.depthTest = false*/
   },
 
-  showProject: function (evt) {/*
-    var projectInfo = this.projectInfo[evt.currentTarget.id]
+  showProject: function (evt) { /*
+     var projectInfo = this.projectInfo[evt.currentTarget.id]
      this.backgroundEl.object3D.scale.set(1, 1, 1)
 
      this.el.object3D.scale.set(1, 1, 1)

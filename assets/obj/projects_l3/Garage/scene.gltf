@@ -3,50 +3,50 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 39181,
+      "count": 1814,
       "max": [
-        221.199462890625,
-        172.37234497070312,
-        -9.9540700912475586
+        11.69715690612793,
+        7.8352370262145996,
+        29.881467819213867
       ],
       "min": [
-        -222.96543884277344,
-        2.1123199462890625,
-        -172.62576293945312
+        -11.393722534179688,
+        -9.2522602081298828,
+        1.6404670476913452
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 470172,
+      "byteOffset": 21768,
       "componentType": 5126,
-      "count": 39181,
+      "count": 1814,
       "max": [
-        1,
-        1,
-        1
+        0.99998974800109863,
+        0.99999338388442993,
+        0.99909424781799316
       ],
       "min": [
-        -1,
-        -1,
-        -1
+        -0.99991136789321899,
+        -0.99999785423278809,
+        -0.99945163726806641
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 39181,
+      "count": 1814,
       "max": [
-        1,
-        1,
-        1,
+        0.99999958276748657,
+        0.99999368190765381,
+        0.99998897314071655,
         1
       ],
       "min": [
-        -1,
-        -1,
-        -1,
+        -0.99999988079071045,
+        -0.99999451637268066,
+        -0.99990761280059814,
         -1
       ],
       "type": "VEC4"
@@ -54,23 +54,23 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 39181,
+      "count": 1814,
       "max": [
-        0.99874663352966309,
-        0.9990234375
+        0.94886797666549683,
+        0.99000000953674316
       ],
       "min": [
-        0.0009765326976776123,
-        0.00097655504941940308
+        0.0099999997764825821,
+        0.041685998439788818
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 132774,
+      "count": 6132,
       "max": [
-        39180
+        1813
       ],
       "min": [
         0
@@ -80,42 +80,42 @@
   ],
   "asset": {
     "extras": {
-      "author": "Alex Fillion (https://sketchfab.com/dougitougi123)",
+      "author": "Makovetkyi Volodymyr (https://sketchfab.com/pbr-scans)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/1955-sci-fi-africa-tow-truck-a96241f8fbcf400d92eb7ea4aaaa37c6",
-      "title": "1955 Sci-Fi | Africa Tow Truck"
+      "source": "https://sketchfab.com/3d-models/pb120-wrenchs-low-0e599efc563247d6af1ec04a4940570c",
+      "title": "PB120 Wrenchs Low"
     },
-    "generator": "Sketchfab-7.44.0",
+    "generator": "Sketchfab-10.33.2",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 531096,
+      "byteLength": 24528,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 313448,
-      "byteOffset": 531096,
+      "byteLength": 14512,
+      "byteOffset": 24528,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 940344,
-      "byteOffset": 844544,
+      "byteLength": 43536,
+      "byteOffset": 39040,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 626896,
-      "byteOffset": 1784888,
+      "byteLength": 29024,
+      "byteOffset": 82576,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -123,40 +123,32 @@
   ],
   "buffers": [
     {
-      "byteLength": 2411784,
+      "byteLength": 111600,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/lambert1_baseColor.png"
+      "uri": "textures/wrenchs_Low_lambert2SG2_baseColor.jpeg"
     },
     {
-      "uri": "textures/lambert1_metallicRoughness.png"
+      "uri": "textures/wrenchs_Low_lambert2SG2_metallicRoughness.png"
     },
     {
-      "uri": "textures/lambert1_emissive.png"
-    },
-    {
-      "uri": "textures/lambert1_normal.png"
+      "uri": "textures/wrenchs_Low_lambert2SG2_normal.png"
     }
   ],
   "materials": [
     {
-      "alphaMode": "BLEND",
       "doubleSided": true,
       "emissiveFactor": [
-        1,
-        1,
-        1
+        0,
+        0,
+        0
       ],
-      "emissiveTexture": {
-        "index": 2,
-        "texCoord": 0
-      },
-      "name": "lambert1",
+      "name": "wrenchs_Low_lambert2SG2",
       "normalTexture": {
-        "index": 3,
+        "index": 2,
         "scale": 1,
         "texCoord": 0
       },
@@ -182,7 +174,6 @@
   ],
   "meshes": [
     {
-      "name": "polySurface845_lambert1_0",
       "primitives": [
         {
           "attributes": {
@@ -221,41 +212,11 @@
       "children": [
         3
       ],
-      "matrix": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        -1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "name": "00a3c202005a4c3a84015dd6ff029f5c.fbx"
-    },
-    {
-      "children": [
-        4
-      ],
-      "name": "RootNode"
-    },
-    {
-      "children": [
-        5
-      ],
-      "name": "polySurface845"
+      "name": "c39f2f59f1df4a78b76a174f2c86076a.obj.cleaner.materialmerger.gles"
     },
     {
       "mesh": 0,
-      "name": "polySurface845_lambert1_0"
+      "name": ""
     }
   ],
   "samplers": [
@@ -287,10 +248,6 @@
     {
       "sampler": 0,
       "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 3
     }
   ]
 }

@@ -74,14 +74,14 @@ for (var i = 0; i < infoBubble.length; ++i) {
   infoBubble[i].addEventListener('click', putFront)
 }
 
-putBack = function () {
+var putBack = function () {
   document.querySelector('#container').style.zIndex = '-2'
-  document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
+  document.getElementByTagName('a-scene').style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 }
 
-putFront = function (evt) {
-  document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
+var putFront = function (evt) {
+  document.getElementByTagName('a-scene').style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
 
   console.log('Camera move avant changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
@@ -91,3 +91,7 @@ putFront = function (evt) {
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
   console.log('Camera move après changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
 }
+
+var putFront = function () {
+    console.log('HA MERDE')
+  }

@@ -83,7 +83,7 @@ var putFront = function (evt) {
   var oldInstructions = document.getElementById('instructions')
   var oldLinkedin = document.getElementById('linkedin')
   var button = document.getElementById('start_experience')
-  
+
 
   titre.innerHTML = JSON.stringify(selectedProject.title)
   description.innerHTML = JSON.stringify(selectedProject.description)

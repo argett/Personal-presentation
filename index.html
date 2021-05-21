@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <script src="scripts/aframe-v1.2.0.min.js"></script>
-  <script src="scripts/highlight.js"></script> <!--  for the UI -->
-  <script src="scripts/interractions.js"></script>
+  <script src="scripts/highlight.js"></script>
   <script src="scripts/mobile.js"></script>
 
   <!-- 
@@ -42,7 +41,7 @@
       <div id="instructions" class="instructions">
         <div><strong>Pc</strong>: Clavier (flèches directionnelles/zqsd) et souris</div>
         <div><strong>Mobile</strong>: visez les cibles au sol</div>
-        <p id="projectDescription"></p>
+        <div id="projectDescription"></div>
       </div>
       <a class="button" id="start_experience" href="#">Commencer la visite</a>
     </div>
@@ -246,24 +245,6 @@
                   rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
                   visible="false">
         </a-entity>
-        <!--
-        <a-entity id="infoPanel" position="0 0 0" interractions visible="false" scale="0.001 0.001 0.001"
-                  geometry="primitive: plane; width: 1.2; height: 1.5"
-                  material="color: #FFF; shader: flat; transparent: false" class="raycastable"
-                  sound="src: assets\audio\closing.wav; on: click; volume:1">
-
-          <a-entity id="projectResume" text="align: center; color: red; value: Debug text " position="0 0 -1"
-                    visible="false">
-          </a-entity>
-
-          <a-entity id="projectTitle" position="0 0.5 0"
-                    text="shader: msdf; align: center; width: 1.2; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test titre">
-          </a-entity>
-          <a-entity id="projectDescription" position="-0.5 0.1 0"
-                    text="baseline: top; shader: msdf; anchor: left; width: 1; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test description">
-          </a-entity>
-        </a-entity>
-         -->
       </a-entity>
     </a-camera>
 

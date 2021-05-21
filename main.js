@@ -1,12 +1,13 @@
 'use strict'
 
 var putBack = function () {
-  document.querySelector('#container').outerHTML = ''
+  document.querySelector('#container').style.zIndex = '-2'
   document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
 }
 
 var putFront = function () {
-  document.getElementsByTagName('a-scene')[0].style.zIndex = '1'
+  document.querySelector('#container').style.zIndex = '1'
+  document.getElementsByTagName('a-scene')[0].style.zIndex = '0'
 }
 
 var startExperienteBtn = document.querySelector('#start_experience')

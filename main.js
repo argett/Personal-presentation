@@ -76,19 +76,17 @@ var putBack = function () {
 var putFront = function (evt) {
   document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
- /*
-  var selectedProject = projectsInfo[evt.currentTarget.id]
-  document.querySelector('#title').innerHTML = selectedProject.title
-  document.querySelector('#projectDescription').innerHTML = selectedProject.description
-  document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
-*/
-  console.log('id = ' + evt.currentTarget.id)
+
   var selectedProject = projectsInfo[evt.currentTarget.id]
   var titre = document.getElementById('title')
-  console.log('titre = ' + titre)
-  var descriptionBulle = document.getElementById('projectDescription')
-  titre.innerHTML = JSON.stringify(selectedProject.title);
-  descriptionBulle.innerText = JSON.stringify(selectedProject.description);
+  var description = document.getElementById('projectDescription')
+  var oldInstructions = document.getElementById('instructions')
+  var oldLinkedin = document.getElementById('linkedin')
+
+  titre.innerHTML = JSON.stringify(selectedProject.title)
+  description.innerText = JSON.stringify(selectedProject.description)
+  oldInstructions.innerHTML = ''
+  oldLinkedin.innerHTML = ''
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
 }
 

@@ -82,11 +82,14 @@ var putFront = function (evt) {
   var description = document.getElementById('projectDescription')
   var oldInstructions = document.getElementById('instructions')
   var oldLinkedin = document.getElementById('linkedin')
+  var button = document.getElementById('start_experience')
+  
 
   titre.innerHTML = JSON.stringify(selectedProject.title)
   description.innerHTML = JSON.stringify(selectedProject.description)
   oldInstructions.innerHTML = ''
   oldLinkedin.innerHTML = ''
+  button.innerHTML = 'Fermer'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
 }
 

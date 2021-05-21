@@ -84,7 +84,7 @@ var putFront = function (evt) {
   var oldLinkedin = document.getElementById('linkedin')
 
   titre.innerHTML = JSON.stringify(selectedProject.title)
-  description.innerText = JSON.stringify(selectedProject.description)
+  description.innerHTML = JSON.stringify(selectedProject.description)
   oldInstructions.innerHTML = ''
   oldLinkedin.innerHTML = ''
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)

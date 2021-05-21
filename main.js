@@ -68,13 +68,13 @@ var projectsInfo = {
 }
 
 var putBack = function () {
-    document.querySelector('#container').style.zIndex = '-2'
-    document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
+  document.querySelector('#container').style.zIndex = '-2'
+  document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 }
 
 var putFront = function (evt) {
-  getElementsByTagName('a-scene')[0].style.zIndex = '-2'
+    document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
 
   console.log('id = ' + evt.currentTarget.id)

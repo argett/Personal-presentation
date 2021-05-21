@@ -66,14 +66,6 @@ var projectsInfo = {
   }
 }
 
-var startExperienteBtn = document.querySelector('#start_experience')
-startExperienteBtn.addEventListener('click', putBack)
-
-var infoBubble = document.querySelectorAll('.menu-button')
-for (var i = 0; i < infoBubble.length; ++i) {
-  infoBubble[i].addEventListener('click', putFront)
-}
-
 var putBack = function () {
   document.querySelector('#container').style.zIndex = '-2'
   document.getElementByTagName('a-scene').style.zIndex = 'auto'
@@ -92,6 +84,10 @@ var putFront = function (evt) {
   console.log('Camera move après changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
 }
 
-var putFront = function () {
-    console.log('HA MERDE')
-  }
+var startExperienteBtn = document.querySelector('#start_experience')
+startExperienteBtn.addEventListener('click', putBack)
+
+var infoBubble = document.querySelectorAll('.menu-button')
+for (var i = 0; i < infoBubble.length; ++i) {
+  infoBubble[i].addEventListener('click', putFront)
+}

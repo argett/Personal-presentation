@@ -69,12 +69,12 @@ var projectsInfo = {
 
 var putBack = function () {
   document.querySelector('#container').style.zIndex = '-2'
-  document.getElementsByTagName[0]('a-scene').style.zIndex = 'auto'
+  document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 }
 
 var putFront = function (evt) {
-  document.getElementsByTagName[0]('a-scene').style.zIndex = '-2'
+  document.getElementsByTagName('a-scene')[0].style.zIndex = '-2'
   document.querySelector('#container').style.zIndex = 'auto'
 
   console.log('Camera move avant changement = ' + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))

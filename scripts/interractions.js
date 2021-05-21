@@ -1,13 +1,13 @@
 /* global AFRAME */
 AFRAME.registerComponent('interractions', {
   init: function () {
-    var buttonEls = document.querySelectorAll('.menu-button') /*
+    /*
     var fadeBackgroundEl = this.fadeBackgroundEl = document.querySelector('#fadeBackground')
 
     this.movieImageEl
     this.movieTitleEl = document.querySelector('#projectTitle')
     this.movieDescriptionEl = document.querySelector('#projectDescription')
-*/
+    */
     this.projectInfo = {
       M1_Pa8: {
         title: 'Projet a 8',
@@ -78,8 +78,9 @@ AFRAME.registerComponent('interractions', {
     // this.onMenuButtonClick = this.onMenuButtonClick.bind(this)
     // this.onBackgroundClick = this.onBackgroundClick.bind(this)
     // this.backgroundEl = document.querySelector('#infoPanel')
+    var buttonEls = document.querySelectorAll('.menu-button')
     for (var i = 0; i < buttonEls.length; ++i) {
-      buttonEls[i].addEventListener('click', this.onMenuButtonClick)
+      buttonEls[i].addEventListener('click', this.showProject)
     }
   /*
   this.backgroundEl.addEventListener('click', this.onBackgroundClick)
@@ -89,7 +90,7 @@ AFRAME.registerComponent('interractions', {
   fadeBackgroundEl.getObject3D('mesh').material.depthTest = false*/
   },
 
-  onMenuButtonClick: function (evt) {
+  showProject: function (evt) {
     var projectInfo = this.projectInfo[evt.currentTarget.id]
     // this.backgroundEl.object3D.scale.set(1, 1, 1)
 
@@ -101,10 +102,11 @@ AFRAME.registerComponent('interractions', {
     // if (this.movieImageEl) { this.movieImageEl.object3D.visible = false; }
     // this.movieImageEl = projectInfo.imgEl
     // this.movieImageEl.object3D.visible = true
-
+    console.log("Camera move avant changement = " + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
     document.querySelector('#title').innerHTML = projectInfo.title
     document.querySelector('#projectDescription').innerHTML = projectInfo.description
     document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
+    console.log("Camera move après changement = " + document.querySelector('#camera').getAttribute('wasd-controls-enabled'))
   },
 
   onBackgroundClick: function (evt) {

@@ -117,8 +117,8 @@ AFRAME.registerComponent('interractions', {
     this.movieImageEl = projectInfo.imgEl
     this.movieImageEl.object3D.visible = true
 
-    document.getElementById('#title').innerText = projectInfo.title;
-    document.getElementById('#projectDescription').innerText = projectInfo.description;
+    document.querySelector('#title').innerText = projectInfo.title
+    document.querySelector('#projectDescription').innerText = projectInfo.description
     document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
   },
 

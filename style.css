@@ -46,9 +46,11 @@ a:link, a:hover, a:visited, a:active {
 
 .info .company{
     font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
-.title{
+.info .title{
     font-size: 3em;
     font-family: 'Trebuchet MS', cursive;
     text-align: center;
@@ -74,7 +76,7 @@ a:link, a:hover, a:visited, a:active {
 
 @media (max-width: 600px) {
     .info {
-      width: 60%
+      width: 80%
     }
 
     .info .company{
@@ -82,7 +84,11 @@ a:link, a:hover, a:visited, a:active {
     }
 
     .info .title{
-      font-size: 3em;
+        font-size: 2em;
+    }
+    
+    .info .instructions{
+        font-size: 1em;
     }
 
 }

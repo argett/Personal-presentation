@@ -36,9 +36,6 @@ a:link, a:hover, a:visited, a:active {
     align-items: center;
     width: 500px;
 
-    text-align: justify;
-    text-justify: inter-word;
-
     position: absolute;
     /*top: 50%;*/
     left: 50%;
@@ -67,6 +64,13 @@ a:link, a:hover, a:visited, a:active {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
     margin: 24px 0 0 0;
+}
+
+.info .projectDescription{
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%;
+    font-size: 1.5em;
 }
 
 @media (max-width: 600px) {

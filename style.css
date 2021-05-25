@@ -76,11 +76,11 @@ a:link, a:hover, a:visited, a:active {
 
 @media (max-width: 600px) {
     .info {
-      width: 80%
+      width: 80%;
     }
 
     .info .company{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .info .title{
@@ -89,7 +89,7 @@ a:link, a:hover, a:visited, a:active {
     
     .info .instructions{
         font-size: 1em;
+        height: 300px;
         overflow-y:auto;
     }
-
 }

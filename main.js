@@ -85,8 +85,15 @@ var putFront = function (evt) {
   var linkedin = document.getElementById('linkedin')
   var button = document.getElementById('start_experience')
 
-  titre.innerHTML = JSON.stringify(selectedProject.title)
-  description.innerHTML = JSON.stringify(selectedProject.description)
+  // remove first "
+  var title = JSON.stringify(selectedProject.title).substring(1)
+  var des = JSON.stringify(selectedProject.description).substring(1)
+  // remove last "
+  var title = title.slice(0, -1)
+  var des = des.slice(0, -1)
+
+  titre.innerHTML = title
+  description.innerHTML = des
   pc.innerHTML = ''
   mobile.innerHTML = ''
   linkedin.innerHTML = ''

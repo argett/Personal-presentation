@@ -28,7 +28,7 @@ a:link, a:hover, a:visited, a:active {
 .info{
 	font-family: Arial;
 	position:absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(50, 50, 50, 0.7);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -50,24 +50,22 @@ a:link, a:hover, a:visited, a:active {
 
 .title{
     font-size: 3em;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Trebuchet MS', cursive;
     text-align: center;
 }
 
 .info .button{
     font-weight: bold;
-    background-color: rgb(37, 192, 212);
+    background-color: rgb(25, 211, 236);
     padding: 10px;
     margin: 24px 0 0 0;
 }
 
 .info .instructions{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     margin: 24px 0 0 0;
-}
-
-.info .instructions .projectDescription{
+    border-radius: 5px;
     text-align: justify;
     text-justify: inter-word;
     line-height: 150%;

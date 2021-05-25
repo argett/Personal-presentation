@@ -79,6 +79,7 @@ var putFront = function (evt) {
 
   var selectedProject = projectsInfo[evt.currentTarget.id]
   var titre = document.getElementById('title')
+  var description = document.getElementById('projectDescription')
   var pc = document.getElementById('pc')
   var mobile = document.getElementById('mobile')
   var linkedin = document.getElementById('linkedin')

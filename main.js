@@ -2,7 +2,7 @@
 
 var projectsInfo = {
   M1_Pa8: {
-    title: 'Projet a 8',
+    title: 'Projet à 8',
     description: "Ce projet à 8 qui s'est déroulé sur 1 an et dont j'avais pour rôle chef de projet a consisté à developper un site pour animaux en language ELM disponible sur le lien suivant : https://petopia-app.netlify.app/fr (site non fini). Nous avons utilisé la mathode AGILE en terme de management."
   },
   M1_Parking: {
@@ -18,7 +18,7 @@ var projectsInfo = {
     description: "Ce projet à été réalisé en binôme en C++. Nous avons créé une méthode de capture d'écran d'un scène 3D basé sur la technique du Ray Tracing. Les scenes sont composées de formes géometriques de bases (sphères, cubes, pyramides...)."
   },
   M1_Fusee: {
-    title: 'Construction et lancement de fusee ',
+    title: 'Construction et lancement de fusée ',
     description: 'Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste a créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée plus ou moins personnalisée avec des composants pré-crées (coiffe, réservoire de carburant et moteur). Dans un second temps, le joueur doit faire décoller, si elle bien construite, sa fusée.'
   },
   M1_Chat: {
@@ -54,7 +54,7 @@ var projectsInfo = {
     description: "Projet réalisé en trinôme et codé en C. C'est un jeu de gestion où le joueur gère des voitures louables. Il dispose sur une carte d'une ville de points d'emplacements pour créer des points de récupération de véhicule ou des garages pour réparer ses véhicules. Le joueur peut également acheter de nouveaux véhicules, ordonner une réparation sur un véhjicule précis et dispose de nombreuses améliorations afin que le véhicule dure plus longtemps, soit plus fiable, meilleur, etc. Le but du jeux étant de gagner le plus d'argent en augmentant le nombre de location. Notre jeux possède sa propre interface graphique, luncher, écran de fin..."
   },
   L2_ObjectiveEquilibrium: {
-    title: 'Jeux de société adapte aux non-voyants',
+    title: 'Jeux de société adapté aux non-voyants',
     description: "Projet à 5 sur un semestre en entier. Nous avons réalisé un jeu de société jouable entre 3 et 5 joueurs. Il se joue avec des cartes et de pions. L'objectif de ce jeux de société était de le concevoir tel qu'il soit jouable par des personnes non-voyantes."
   },
   Other_This: {

@@ -49,8 +49,9 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .info .title{
-    font-size: 3.5em;
+    font-size: 3em;
     font-family: 'Poiret One', cursive;
+    text-align: center;
 }
 
 .info .button{
@@ -67,10 +68,11 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .projectDescription{
+    text-align: center;
     text-align: justify;
     text-justify: inter-word;
     line-height: 150%;
-    font-size: 2.5em;
+    font-size: 1.2em;
 }
 
 @media (max-width: 600px) {

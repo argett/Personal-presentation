@@ -26,6 +26,7 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .info{
+    overflow-y:auto;
 	font-family: Arial;
 	position:absolute;
     background-color: rgba(50, 50, 50, 0.7);
@@ -34,14 +35,12 @@ a:link, a:hover, a:visited, a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-
-    position: absolute;
+    width: 700px;
+    height: 800px;
+    overflow-y:auto;
     /*top: 50%;*/
     left: 50%;
-    transform: translate(-50%, -0%);
-
-
+    margin-top: 20%;
 }
 
 .info .company{
@@ -90,6 +89,5 @@ a:link, a:hover, a:visited, a:active {
     .info .instructions{
         font-size: 1em;
         height: 300px;
-        overflow-y:auto;
     }
 }

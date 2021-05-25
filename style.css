@@ -89,6 +89,7 @@ a:link, a:hover, a:visited, a:active {
     
     .info .instructions{
         font-size: 1em;
+        overflow-y:auto;
     }
 
 }

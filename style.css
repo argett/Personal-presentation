@@ -22,7 +22,7 @@ a:link, a:hover, a:visited, a:active {
     width:100%;
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .info{
@@ -36,8 +36,6 @@ a:link, a:hover, a:visited, a:active {
     justify-content: center;
     align-items: center;
     width: 700px;
-    max-height: 800px;
-    overflow-y:auto;
 }
 
 .info .company{
@@ -68,6 +66,8 @@ a:link, a:hover, a:visited, a:active {
     text-justify: inter-word;
     line-height: 150%;
     font-size: 1.2em;
+    max-height: 500px;
+    overflow-y:auto;
 }
 
 @media (max-width: 600px) {

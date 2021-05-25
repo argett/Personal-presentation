@@ -19,7 +19,7 @@ var projectsInfo = {
   },
   M1_Fusee: {
     title: 'Construction et lancement de fusée ',
-    description: 'Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste a créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée plus ou moins personnalisée avec des composants pré-crées (coiffe, réservoire de carburant et moteur). Dans un second temps, le joueur doit faire décoller, si elle bien construite, sa fusée.'
+    description: 'Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste à créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée plus ou moins personnalisée avec des composants pré-crées (coiffe, réservoire de carburant et moteur). Dans un second temps, le joueur doit faire décoller, si elle bien construite, sa fusée.'
   },
   M1_Chat: {
     title: 'Application de chat',
@@ -31,7 +31,7 @@ var projectsInfo = {
   },
   M1_MD_Learning: {
     title: 'Machine et Deep Learning',
-    description: "Le projet réalisé à 4 et codé en python consiste en 2 parties. Premièrement, trier des nombres manuscrits en images de 25x25 automatiquement en Machine Learning, puis deuxièmement différencier des images de chiens et de chats en Deep Learning. Le but secondaire était de réaliser une IA la plus rapide possible en terme d'analyse et non pas une qui soit juste fonctionnelle."
+    description: "Projet réalisé à 4 et codé en python. Il est séparé en 2 parties distinctes. Premièrement, trier des nombres manuscrits en images de 25x25 automatiquement en Machine Learning, puis deuxièmement différencier des images de chiens et de chats en Deep Learning. Le but secondaire était de réaliser une IA la plus rapide possible en terme d'analyse et non pas une qui soit juste fonctionnelle."
   },
   L3_NewsAdventure: {
     title: 'Jeux mobile sous Unity',
@@ -55,7 +55,7 @@ var projectsInfo = {
   },
   L2_ObjectiveEquilibrium: {
     title: 'Jeux de société adapté aux non-voyants',
-    description: "Projet à 5 sur un semestre en entier. Nous avons réalisé un jeu de société jouable entre 3 et 5 joueurs. Il se joue avec des cartes et de pions. L'objectif de ce jeux de société était de le concevoir tel qu'il soit jouable par des personnes non-voyantes."
+    description: "Projet à 5 sur un semestre en entier. Nous avons réalisé un jeu de société jouable entre 3 et 5 joueurs. Il se joue avec des cartes et des pions. L'objectif de ce jeux de société était de le concevoir tel qu'il soit jouable par des personnes non-voyantes."
   },
   Other_This: {
     title: 'Ce projet',
@@ -63,7 +63,7 @@ var projectsInfo = {
   },
   Other_Dimension: {
     title: 'Pokémon Dimension',
-    description: "Pokémon Dimension est un Fan-game (jeux réalisé par et pour les fans d'une license en particulier) Pokémon maintenant stoppé par son createur 'Zenos'. Pendant 3 ans, j'ai travaillé principalement en tant que mappeur sur ce jeux en 2 dimmensions réalisé à l'aide du logiciel PDSK. J'ai pour ma part utilisé Tiled. L'équipe est composée uniquement de fan ne se connaissant pas dans la vie réèlle ayant entre 16 et 25 ans. Tous les échanges que ce soit d'idées, de concéption ou pour discuter se faisaient via le logiciel Discord. Ce fut une innitiative se basant purement sur le volontariat et la bonne volontée des developpeurs. C'est donc un projet non-scolaire."
+    description: "Pokémon Dimension est un Fan-game (jeux réalisé par et pour les fans d'une license en particulier) Pokémon maintenant stoppé par son createur 'Zenos'. Pendant 3 ans, j'ai travaillé principalement en tant que mappeur sur ce jeux en 2 dimmensions réalisé à l'aide du logiciel PDSK. J'ai pour ma part utilisé Tiled. L'équipe est composée uniquement de fan ne se connaissant pas dans la vie réèlle ayant entre 16 et 25 ans. Tous les échanges que ce soit d'idées, de conception ou pour discuter se faisaient via le logiciel Discord. Ce fut une innitiative se basant purement sur le volontariat et la bonne volontée des developpeurs. C'est donc un projet non-scolaire."
   }
 }
 

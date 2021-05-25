@@ -79,16 +79,16 @@ var putFront = function (evt) {
 
   var selectedProject = projectsInfo[evt.currentTarget.id]
   var titre = document.getElementById('title')
-  var description = document.getElementById('projectDescription')
-  var oldInstructions = document.getElementById('instructions')
-  var oldLinkedin = document.getElementById('linkedin')
+  var pc = document.getElementById('pc')
+  var mobile = document.getElementById('mobile')
+  var linkedin = document.getElementById('linkedin')
   var button = document.getElementById('start_experience')
-
 
   titre.innerHTML = JSON.stringify(selectedProject.title)
   description.innerHTML = JSON.stringify(selectedProject.description)
-  oldInstructions.innerHTML = ''
-  oldLinkedin.innerHTML = ''
+  pc.innerHTML = ''
+  mobile.innerHTML = ''
+  linkedin.innerHTML = ''
   button.innerHTML = 'Fermer'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
 }

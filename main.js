@@ -12,7 +12,7 @@ var projectsInfo = {
   },
   M1_Robot: {
     title: 'Robot manipulateur',
-    description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Ce projet consistait à appliquer les techniques de navigation, selection et manipulation à un robot type d'usine muni d'un bras manipulateur avec une base mouvante. Le modèle 3D et l'agencement des pièces en fonction des mouvements du bras ont été fournis par le professeur. Ce robot peut donc se déplacer à proximité de petits cubes qu'il peut saisir et déplacer d'un point A à un point B."
+    description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Ce projet consistait à appliquer les techniques de navigation, selection et manipulation à un robot type d'usine muni d'un bras manipulateur avec une base mouvante. Le modèle 3D et l'agencement des pièces en fonction des mouvements du bras ont été fournis par le professeur. Ce robot peut donc se déplacer à proximité de petits cubes qu'il peut saisir et les déplacer sur une surface dédiée."
   },
   M1_RayTracing: {
     title: 'Ray Tracing',

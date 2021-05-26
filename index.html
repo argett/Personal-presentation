@@ -68,6 +68,10 @@
       <img id="texture_interraction_info" src="assets/img/info.jpg" />
       <img id="texture_interraction_wip" src="assets/img/imgAvenir.jpg" />
 
+      <img id="texture_projet_covid_sain" src="assets/img/m1/covid_sain.jpg" />
+      <img id="texture_projet_covid_atteint" src="assets/img/m1/covid_atteint.jpg" />
+      <img id="texture_projet_covid_analyse" src="assets/img/m1/covid_analyse.jpg" />
+
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
       <a-asset-item id="lamp" src="assets/obj/lustre/scene.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
@@ -656,21 +660,23 @@
                         class="raycastable menu-button clickable">
               </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -37">
+              <a-plane src="#texture_projet_covid_sain" height="2" width="2" rotation="-10 90 0" position="-4 2 -37">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 1.2 -37" scale="4 4 4"
+              <a-entity text="align: center; color: white; value:Poumons sains" position="-3.75 1.2 -37" scale="4 4 4"
                         rotation="0 90 0">
               </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -39.75">
+              <a-plane src="#texture_projet_covid_atteint" height="2" width="2" rotation="-10 90 0"
+                       position="-4 2 -39.75">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 1.2 -39.75"
+              <a-entity text="align: center; color: white; value:Poumons atteints" position="-3.75 1.2 -39.75"
                         scale="4 4 4" rotation="0 90 0">
               </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -42.5">
+              <a-plane src="#texture_projet_covid_analyse" height="2" width="2" rotation="-10 90 0"
+                       position="-4 2 -42.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 3" position="-3.75 1.2 -42.5"
+              <a-entity text="align: center; color: white; value:Poumons avec covid analysé" position="-3.75 1.2 -42.5"
                         scale="4 4 4" rotation="0 90 0">
               </a-entity>
             </a-entity>

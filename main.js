@@ -20,7 +20,7 @@ var projectsInfo = {
   },
   M1_Fusee: {
     title: 'Construction et lancement de fusée ',
-    description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste à créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée personnalisée avec des composants pré-crées. Le joueur a donc à sa disposition plusieurs coiffes, réservoires de carburant et moteurs pour faire son choix. Il a également la possibilité de rajouter jusqu'à deux étages supplémentaires. Dans un second temps, le joueur doit faire décoller, si bien construite, sa fusée. le but étant de la faire décoller et aller le plus haut possible. Nous avons rajouté quelques interractions supplémentaires afin de rendre le serious game plus vivant et interractif pour le joueur."
+    description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste à créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée personnalisée avec des composants pré-crées. Le joueur a donc à sa disposition plusieurs coiffes, réservoires de carburant et moteurs pour faire son choix. Il a également la possibilité de rajouter jusqu'à deux étages supplémentaires. Dans un second temps, le joueur doit faire décoller, si bien construite, sa fusée. Le but étant de la faire décoller et aller le plus haut possible. Nous avons rajouté quelques interractions supplémentaires afin de rendre le serious game plus vivant et interractif pour le joueur."
   },
   M1_Chat: {
     title: 'Application de chat',

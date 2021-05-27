@@ -129,13 +129,13 @@
   ],
   "images": [
     {
-      "uri": "textures/wrenchs_Low_lambert2SG2_baseColor.jpeg"
+      "uri": "./textures/wrenchs_Low_lambert2SG2_baseColor.jpeg"
     },
     {
-      "uri": "textures/wrenchs_Low_lambert2SG2_metallicRoughness.png"
+      "uri": "./textures/wrenchs_Low_lambert2SG2_metallicRoughness.png"
     },
     {
-      "uri": "textures/wrenchs_Low_lambert2SG2_normal.png"
+      "uri": "./textures/wrenchs_Low_lambert2SG2_normal.png"
     }
   ],
   "materials": [

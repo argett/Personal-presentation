@@ -239,7 +239,7 @@
 
     <a-mixin id="model_plant_v1" gltf-model="#plant_v1" scale="0.5 0.5 0.5">
     </a-mixin>
-    <a-mixin id="model_plant_v2" gltf-model="#plant_v2" scale="0.5 0.5 0.5">
+    <a-mixin id="model_plant_v2" gltf-model="#plant_v2" scale="0.01 0.01 0.01">
     </a-mixin>
 
     <a-mixin id="model_wall_lamp" gltf-model="#lamp" scale="0.025 0.025 0.025">
@@ -318,17 +318,13 @@
         <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 0" rotation="-90 0 0" class="phone clickable">
         </a-entity>
 
-        <a-entity id="green_plant" mixin="model_plant_v1" position="6 0 6" rotation="0 0 0">
+        <a-entity id="green_plant" mixin="model_plant_v2" position="6 0 6" rotation="0 0 0">
         </a-entity>
-        <a-entity id="green_plant" mixin="model_plant_v1" position="6 0 -6" rotation="0 0 0">
+        <a-entity id="green_plant" mixin="model_plant_v2" position="6 0 -6" rotation="0 0 0">
         </a-entity>
-        <a-entity id="green_plant" mixin="model_plant_v1" position="-6 0 6" rotation="0 0 0">
+        <a-entity id="green_plant" mixin="model_plant_v2" position="-6 0 6" rotation="0 0 0">
         </a-entity>
-        <a-entity id="green_plant" mixin="model_plant_v1" position="-6 0 -6" rotation="0 0 0">
-        </a-entity>
-
-
-        <a-entity id="green_plant2" mixin="model_plant_v2" position="1 0 1" rotation="0 0 0">
+        <a-entity id="green_plant" mixin="model_plant_v2" position="-6 0 -6" rotation="0 0 0">
         </a-entity>
 
         <a-entity id="North">
@@ -793,6 +789,11 @@
         </a-entity>
 
         <a-entity id="EndCorridor">
+          <a-entity id="green_plant2" mixin="model_plant_v1" position="2.25 0 -57.5" rotation="0 0 0">
+          </a-entity>
+          <a-entity id="green_plant2" mixin="model_plant_v1" position="-2.25 0 -57.5" rotation="0 180 0">
+          </a-entity>
+
           <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -57.75">
           </a-entity>
           <a-plane src="#texture_wall" height="5" width="6" rotation="0 0 0" repeat="2 2" position="0 2.5 -59">
@@ -1095,6 +1096,11 @@
 
 
         <a-entity id=" EndCorridor">
+          <a-entity id="green_plant2" mixin="model_plant_v1" position="57.5 0 2.25" rotation="0 0 0">
+          </a-entity>
+          <a-entity id="green_plant2" mixin="model_plant_v1" position="57.5 0 -2.25" rotation="0 180 0">
+          </a-entity>
+
           <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 180 0" position="57.75 2.5 3">
           </a-entity>
           <a-plane src="#texture_wall" height="5" width="6" rotation="0 -90 0" repeat="2 2" position="59 2.5 0">

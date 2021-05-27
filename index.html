@@ -226,7 +226,7 @@
              material="src: #texture_interraction_tp" visible="false"
              sound="src: assets\audio\teleport.wav; on: click; volume:1">
     </a-mixin>
-    <a-mixin id="tp_circles_second" mobile geometry="primitive: circle;" radius="0.3"
+    <a-mixin id="tp_circles_second" mobile geometry="primitive: circle;" radius="0.2"
              material="src: #texture_interraction_tp" visible="false"
              sound="src: assets\audio\teleport.wav; on: click; volume:1">
     </a-mixin>
@@ -284,11 +284,6 @@
                   to: 1 1 1; 
                   dur:150" class="phone">
         </a-cursor>
-
-        <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
-                  rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
-                  visible="false">
-        </a-entity>
       </a-entity>
     </a-camera>
 
@@ -401,17 +396,71 @@
         </a-entity>
 
         <a-entity id="Teleport_pads">
-          <a-entity id="teleport" mixin="tp_circles_second" position="0 0.01 -14.5" rotation="-90 0 0"
-                    class="phone clickable">
+
+          <a-entity id="Teleport_wall_right">
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -11.5" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -16" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -24" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -28" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -36.5" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -40.5" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -49" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.5 0.01 -54" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
           </a-entity>
-          <a-entity id="teleport" mixin="tp_circles_second" position="0 0.01 -27" rotation="-90 0 0"
-                    class="phone clickable">
+
+          <a-entity id="Teleport_wall_left">
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -11.5" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -16" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -24" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -28" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -36.5" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -40.5" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -49" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.5 0.01 -54" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
           </a-entity>
-          <a-entity id="teleport" mixin="tp_circles_second" position="0 0.01 -39.5" rotation="-90 0 0"
-                    class="phone clickable">
-          </a-entity>
-          <a-entity id="teleport" mixin="tp_circles_second" position="0 0.01 -52" rotation="-90 0 0"
-                    class="phone clickable">
+
+          <a-entity id="Teleport_middle">
+            <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -20.25" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -32.75" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -42.25" rotation="-90 0 0"
+                      class="phone clickable">
+            </a-entity>
           </a-entity>
         </a-entity>
 

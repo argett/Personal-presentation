@@ -1,0 +1,633 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 880,
+      "max": [
+        8.4349002838134766,
+        17.710771560668945,
+        9.3519735336303711
+      ],
+      "min": [
+        -8.5839328765869141,
+        5.2382268905639648,
+        -9.8198928833007812
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 10560,
+      "componentType": 5126,
+      "count": 880,
+      "max": [
+        0.7216455340385437,
+        0.99990010261535645,
+        0.8315129280090332
+      ],
+      "min": [
+        -0.89837658405303955,
+        0.10622166842222214,
+        -0.87331187725067139
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 880,
+      "max": [
+        0.86779326200485229,
+        0.99434256553649902,
+        0.94457197189331055,
+        1
+      ],
+      "min": [
+        -0.66693830490112305,
+        -0.33445346355438232,
+        -0.80252945423126221,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 880,
+      "max": [
+        1,
+        1.0000001192092896
+      ],
+      "min": [
+        -2.9802322387695312e-08,
+        1.1920928955078125e-07
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7040,
+      "componentType": 5126,
+      "count": 880,
+      "max": [
+        1,
+        1.0000001192092896
+      ],
+      "min": [
+        -2.9802322387695312e-08,
+        1.1920928955078125e-07
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4500,
+      "max": [
+        879
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 21120,
+      "componentType": 5126,
+      "count": 399,
+      "max": [
+        0.26812946796417236,
+        17.740077972412109,
+        1.2890181541442871
+      ],
+      "min": [
+        -0.26812952756881714,
+        3.4156389236450195,
+        -1.1006087064743042
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 25908,
+      "componentType": 5126,
+      "count": 399,
+      "max": [
+        1,
+        0.95526349544525146,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 14080,
+      "componentType": 5126,
+      "count": 399,
+      "max": [
+        0.65625,
+        1
+      ],
+      "min": [
+        0.34374997019767761,
+        -7.4505805969238281e-08
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18000,
+      "componentType": 5125,
+      "count": 2040,
+      "max": [
+        398
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 30696,
+      "componentType": 5126,
+      "count": 490,
+      "max": [
+        4.0874252319335938,
+        7.1892991065979004,
+        4.0837011337280273
+      ],
+      "min": [
+        -4.0874252319335938,
+        1.0530785322189331,
+        -4.0837011337280273
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 36576,
+      "componentType": 5126,
+      "count": 490,
+      "max": [
+        0.98380553722381592,
+        1,
+        0.98252862691879272
+      ],
+      "min": [
+        -0.98376774787902832,
+        -1,
+        -0.98288631439208984
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 17272,
+      "componentType": 5126,
+      "count": 490,
+      "max": [
+        0.875,
+        1
+      ],
+      "min": [
+        0.125,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 26160,
+      "componentType": 5125,
+      "count": 1872,
+      "max": [
+        489
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 42456,
+      "componentType": 5126,
+      "count": 82,
+      "max": [
+        3.7939496040344238,
+        6.9090433120727539,
+        3.793950080871582
+      ],
+      "min": [
+        -3.7939503192901611,
+        1.454625129699707,
+        -3.7939510345458984
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 43440,
+      "componentType": 5126,
+      "count": 82,
+      "max": [
+        0.97638404369354248,
+        1,
+        0.97638404369354248
+      ],
+      "min": [
+        -0.97638404369354248,
+        -1,
+        -0.97638398408889771
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 14080,
+      "componentType": 5126,
+      "count": 82,
+      "max": [
+        1,
+        0.97638404369354248,
+        0.049018241465091705,
+        1
+      ],
+      "min": [
+        0.21604238450527191,
+        -0.97638404369354248,
+        -0.049018029123544693,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 21192,
+      "componentType": 5126,
+      "count": 82,
+      "max": [
+        0.97466909885406494,
+        0.97466897964477539
+      ],
+      "min": [
+        0.025331020355224609,
+        0.025330960750579834
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 33648,
+      "componentType": 5125,
+      "count": 240,
+      "max": [
+        81
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Andrew.Mischenko (https://sketchfab.com/Andrew.Mischenko)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/potted-plant-68c18589dcd248cea012ed4b90284a14",
+      "title": "Potted Plant"
+    },
+    "generator": "Sketchfab-8.6.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 34608,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 21848,
+      "byteOffset": 34608,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 44424,
+      "byteOffset": 56456,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 15392,
+      "byteOffset": 100880,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 116272,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/leaf_surface_baseColor.png"
+    },
+    {
+      "uri": "textures/leaf_surface_normal.png"
+    },
+    {
+      "uri": "textures/soil_surface_baseColor.png"
+    },
+    {
+      "uri": "textures/soil_surface_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaCutoff": 0.92244664634146345,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "leaf_surface",
+      "normalTexture": {
+        "index": 1,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.46512957317073172
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "plant_stem_surface",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.081902900000000001,
+          0.21634300000000001,
+          0.0016086799999999999,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "pot_surface",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.30299999999999999,
+          0.180588,
+          0.180588,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.92074838162494832
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "soil_surface",
+      "normalTexture": {
+        "index": 3,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "pPlane6_leaf_surface_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "pPlane6_plant_stem_surface_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "pPlane6_pot_surface_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TEXCOORD_0": 12
+          },
+          "indices": 13,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "pPlane6_soil_surface_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 15,
+            "POSITION": 14,
+            "TANGENT": 16,
+            "TEXCOORD_0": 17
+          },
+          "indices": 18,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "39cbb906a87c46b3bc58dd47206df373.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "name": "pPlane6"
+    },
+    {
+      "mesh": 0,
+      "name": "pPlane6_leaf_surface_0"
+    },
+    {
+      "mesh": 1,
+      "name": "pPlane6_plant_stem_surface_0"
+    },
+    {
+      "mesh": 2,
+      "name": "pPlane6_pot_surface_0"
+    },
+    {
+      "mesh": 3,
+      "name": "pPlane6_soil_surface_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}
+

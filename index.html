@@ -69,7 +69,12 @@
       <img id="texture_interraction_info" src="assets/img/info.jpg" />
       <img id="texture_interraction_wip" src="assets/img/imgAvenir.jpg" />
 
+      <!-- projects images autre -->
+      <img id="legend_project_m2" src="assets/img/projets/m2/titrem2.png" />
+
       <!-- projects images M1 -->
+      <img id="legend_project_m1" src="assets/img/projets/m1/titrem1.png" />
+
       <img id="texture_project_covid_sain" src="assets/img/projets/m1/covid_sain.jpg" />
       <img id="texture_project_covid_atteint" src="assets/img/projets/m1/covid_atteint.jpg" />
       <img id="texture_project_covid_analyse" src="assets/img/projets/m1/covid_analyse.jpg" />
@@ -114,12 +119,14 @@
       <img id="legend_project_graph_analyse" src="assets/img/projets/l3/projet_graph_analysis.png" />
 
       <!-- projects images L2 -->
+      <img id="legend_project_l23" src="assets/img/projets/l2/titrel23.png" />
       <img id="texture_project_karting_jeux" src="assets/img/projets/l2/projet_karting_jeux.jpg" />
       <img id="texture_project_karting_arbre" src="assets/img/projets/l2/projet_karting_amelioration.jpg" />
       <img id="legend_project_karting_jeux" src="assets/img/projets/l2/projet_karting_jeux.png" />
       <img id="legend_project_karting_arbre" src="assets/img/projets/l2/projet_karting_amelioration.png" />
 
       <!-- projects images autre -->
+      <img id="legend_project_autre" src="assets/img/projets/autre/titreautre.png" />
       <img id="texture_project_musee_aframe" src="assets/img/projets/autre/aframe.jpg" />
       <img id="texture_project_musee_musee" src="assets/img/projets/autre/musee.jpg" />
 
@@ -172,18 +179,18 @@
 
     <!--   Global assets   -->
 
-    <a-entity text="align: center; color: white; value:Projets de M1" position="0 5.5 -7.5" rotation="0 0 0"
-              scale="10 10 10">
-    </a-entity>
-    <a-entity text="align: center; color: white; value:Projets de L3 - L2" position="7.5 5.5 0" rotation="0 -90 0"
-              scale="10 10 10">
-    </a-entity>
-    <a-entity text="align: center; color: white; value:Projets de M2" position="-7.5 5.5 0" rotation="0 90 0"
-              scale="10 10 10">
-    </a-entity>
-    <a-entity text="align: center; color: white; value:Autres projets" position="0 5.5 7.5" rotation="0 180 0"
-              scale="10 10 10">
-    </a-entity>
+    <a-plane src="#legend_project_m2" material="transparent: true; blending: additive" height="1" width="4"
+             rotation="0 90 0" position="-7.5 5.5 0">
+    </a-plane>
+    <a-plane src="#legend_project_m1" material="transparent: true; blending: additive" height="1" width="3.5"
+             rotation="0 0 0" position="0 5.5 -7.5">
+    </a-plane>
+    <a-plane src="#legend_project_l23" material="transparent: true; blending: additive" height="1" width="3"
+             rotation="0 -90 0" position="7.5 5.5 0">
+    </a-plane>
+    <a-plane src="#legend_project_autre" material="transparent: true; blending: additive" height="1" width="3.75"
+             rotation="0 180 0" position="0 5.5 7.5">
+    </a-plane>
 
     <!--     Spawn assets      -->
 

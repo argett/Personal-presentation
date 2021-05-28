@@ -7,7 +7,9 @@ AFRAME.registerComponent('mobile', {
         objs[i].setAttribute('visible', true)
       }
     } else {
-      document.querySelector('.phone').remove()
+      for (var i = 0; i < objs.length; ++i) {
+        objs[i].remove()
+      }
     }
 
     var teleport_pads = document.querySelectorAll('#teleport')

@@ -565,16 +565,16 @@
               <a-plane src="#texture_project_parking_base" height="2" width="2.2" rotation="-5 -90 0"
                        position="4 2 -24.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Image de base" position="3.75 0.9 -24.5" scale="4 4 4"
-                        rotation="0 -90 0">
-              </a-entity>
+              <a-plane src="#legend_project_parking_base" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 -90 0" position="3.75 0.95 -24.5">
+              </a-plane>
 
               <a-plane src="#texture_project_parking_analysed" height="2" width="2.4" rotation="-5 -90 0"
                        position="4 2 -27.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Image et r&#xE9;sultat après analyse"
-                        position="3.75 0.9 -27.5" scale="4 4 4" rotation="0 -90 0">
-              </a-entity>
+              <a-plane src="#legend_project_parking_analysed" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -27.5">
+              </a-plane>
 
               <a-entity mixin="model_m1_parking" position="3.75 0.8 -30" rotation=" 0 -10 0">
               </a-entity>
@@ -610,16 +610,16 @@
               <a-plane src="#texture_project_robot_navigation" height="2" width="2.2" rotation="-5 -90 0"
                        position="4 2 -37">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Point de vue de navigation" position="3.75 0.9 -37"
-                        scale="4 4 4" rotation="0 -90 0">
-              </a-entity>
+              <a-plane src="#legend_project_robot_navigation" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -37">
+              </a-plane>
 
               <a-plane src="#texture_project_robot_manipulation" height="2" width="2.2" rotation="-5 -90 0"
                        position="4 2 -40">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Point de vue de manipulation" position="3.75 0.9 -40" q
-                        scale="4 4 4" rotation="0 -90 0">
-              </a-entity>
+              <a-plane src="#legend_project_robot_manipulation" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -40">
+              </a-plane>
 
               <a-entity mixin="model_m1_robot" position="3.75 0.7 -43" rotation="0 50 0">
               </a-entity>
@@ -702,15 +702,15 @@
 
               <a-plane src="#texture_project_fusee_lab" height="2" width="2.2" rotation="-5 90 0" position="-4 2 -12">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Fus&#xE9;e en construction" position="-3.75 0.9 -12"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_fusee_lab" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -12">
+              </a-plane>
 
               <a-plane src="#texture_project_fusee_pad" height="2" width="2.2" rotation="-5 90 0" position="-4 2 -15">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Fus&#xE9;e en vol" position="-3.75 0.9 -15"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_fusee_pad" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -15">
+              </a-plane>
 
               <a-entity mixin="model_m1_fusee" position="-3.75 0.8 -17.5" rotation="0 -120 0">
               </a-entity>
@@ -746,16 +746,16 @@
               <a-plane src="#texture_project_chatting_menu" height="2" width="2" rotation="-5 90 0"
                        position="-4 2 -24.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Menu de l'application" position="-3.75 0.9 -24.5"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_chatting_menu" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -24.5">
+              </a-plane>
 
               <a-plane src="#texture_project_chatting_forum" height="2" width="2" rotation="-5 90 0"
                        position="-4 2 -27.25">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Forum public de l'application"
-                        position="-3.75 0.9 -27.25" scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_chatting_forum" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 90 0" position="-3.75 0.95 -27.25">
+              </a-plane>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2.6" rotation="-5 90 0" position="-4 2 -30">
               </a-plane>
@@ -791,25 +791,25 @@
                         class="raycastable menu-button clickable">
               </a-entity>
 
-              <a-plane src="#texture_project_covid_analyse" height="2" width="2" rotation="-5 90 0"
-                       position="-4 2 -39.75">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Poumons avec Covid après analyse"
-                        position="-3.75 0.9 -39.75" scale="4 4 4" rotation="0 90 0">
-              </a-entity>
-
               <a-plane src="#texture_project_covid_sain" height="2" width="2" rotation="-5 90 0" position="-4 2 -37">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Poumons sains" position="-3.75 0.9 -37" scale="4 4 4"
-                        rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_covid_sain" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -37">
+              </a-plane>
 
               <a-plane src="#texture_project_covid_atteint" height="2" width="2" rotation="-5 90 0"
+                       position="-4 2 -39.75">
+              </a-plane>
+              <a-plane src="#legend_project_covid_atteint" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -39.75">
+              </a-plane>
+
+              <a-plane src="#texture_project_covid_analyse" height="2" width="2" rotation="-5 90 0"
                        position="-4 2 -42.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Poumons atteints" position="-3.75 0.9 -42.5"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_covid_analyse" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -42.5">
+              </a-plane>
             </a-entity>
           </a-entity>
 
@@ -969,16 +969,16 @@
 
               <a-plane src="#texture_project_karting_jeux" height="2" width="2.7" rotation="-5 180 0" position="12 2 4">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Carte et interface du jeu" position="12 0.9 3.75"
-                        scale="4 4 4" rotation="0 180 0">
-              </a-entity>
+              <a-plane src="#legende_project_karting_jeux" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="12 0.95 3.75">
+              </a-plane>
 
               <a-plane src="#texture_project_karting_arbre" height="2" width="2.7" rotation="-5 180 0"
                        position="15 2 4">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Arbre d'am&#xE9;lioration des stations"
-                        position="15 0.9 3.75" scale="4 4 4" rotation="0 180 0">
-              </a-entity>
+              <a-plane src="#legende_project_karting_arbre" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 180 0" position="15 0.95 3.75">
+              </a-plane>
 
               <a-entity mixin="model_l2_bwarioKart" position="17.5 0.8 3.75" rotation="0 -110 0">
               </a-entity>
@@ -1062,15 +1062,15 @@
 
               <a-plane src="#texture_project_news_homepage" height="2" width="2.7" rotation="-5 0 0" position="12 2 -4">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Page d'acceuil de l'application"
-                        position="12 0.9 -3.75" scale="4 4 4" rotation="0 0 0">
-              </a-entity>
+              <a-plane src="#legend_project_news_homepage" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="12 0.95 -3.75">
+              </a-plane>
 
               <a-plane src="#texture_project_news_map" height="2" width="2.7" rotation="-5 0 0" position="15 2 -4">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Carte des feux en Australie (2019)"
-                        position="15 0.9 -3.75" scale="4 4 4" rotation="0 0 0">
-              </a-entity>
+              <a-plane src="#legend_project_news_map" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="15 0.95 -3.75">
+              </a-plane>
 
               <a-entity mixin="model_l3_newAdventure" position="18.25  0.8 -3.75" rotation="0 90 0">
               </a-entity>
@@ -1148,15 +1148,15 @@
 
               <a-plane src="#texture_project_graph_graph" height="2" width="2" rotation="-5 0 0" position="37 2 -4">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Pr&#xE9;sentation des donn&#xE9;es d'un graph"
-                        position="37 0.9 -3.75" scale="4 4 4" rotation="0 0 0">
-              </a-entity>
+              <a-plane src="#legend_project_graph_graph" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="37 0.95 -3.75">
+              </a-plane>
 
               <a-plane src="#texture_project_graph_analyse" height="2" width="2.6" rotation="-5 0 0" position="40 2 -4">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Quelques analyses sur un graph" position="40 0.9 -3.75"
-                        scale="4 4 4" rotation="0 0 0">
-              </a-entity>
+              <a-plane src="#legend_project_graph_analyse" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="40 0.95 -3.75">
+              </a-plane>
 
               <a-entity mixin="model_l3_graphs" position="42.5 1.9 -3.75" rotation="0 30 30">
               </a-entity>
@@ -1311,16 +1311,15 @@
 
               <a-plane src="#texture_project_musee_aframe" height="2" width="2.6" rotation="-5 90 0" position="-4 2 12">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Page d'acceuil du site" position="-3.75 0.9 12"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+              <a-plane src="#legend_project_musee_aframe" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="-3.75 0.95 12">
+              </a-plane>
 
               <a-plane src="#texture_project_musee_musee" height="2" width="2.3" rotation="-5 90 0" position="-4 2 15">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Ce mus&#xE9;e vu de haut" position="-3.75 0.9 15"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
-
+              <a-plane src="#legend_project_musee_musee" material="transparent: true; blending: additive" height="0.3"
+                       width="2.8" rotation="0 180 0" position="-3.75 0.95 15">
+              </a-plane>
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 17.5">
               </a-plane>
               <a-entity text="align: center; color: white; value:Mus&#xE9;e en 3D" position="-3.75 0.9 17.5"

@@ -156,7 +156,10 @@
       <a-asset-item id="m1_fusee" src="assets/obj/projects_m1/rocket/scene.gltf" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
       </a-asset-item>
-      <a-asset-item id="m1_chat" src="assets/obj/projects_m1/chatting/scene.glb" res ponse-type="arraybuffer"
+      <a-asset-item id="m1_chatting" src="assets/obj/projects_m1/chatting/scene.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="m1_cnn" src="assets/obj/projects_m1/MD_L/scene.glb" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
       </a-asset-item>
 
@@ -283,7 +286,9 @@
     </a-mixin>
     <a-mixin id="model_m1_fusee" gltf-model="#m1_fusee" scale="0.05 0.05 0.05">
     </a-mixin>
-    <a-mixin id="model_m1_chat" gltf-model="#m1_chat" scale="0.6 0.6 0.6">
+    <a-mixin id="model_m1_chatting" gltf-model="#m1_chatting" scale="0.6 0.6 0.6">
+    </a-mixin>
+    <a-mixin id="model_m1_cnn" gltf-model="#m1_cnn" scale="0.6 0.6 0.6">
     </a-mixin>
 
     <a-mixin id="model_l3_garage" gltf-model="#l3_garage" scale="0.07 0.07 0.07">
@@ -771,7 +776,7 @@
                        height="0.3" width="2.8" rotation="0 90 0" position="-3.75 0.95 -27.25">
               </a-plane>
 
-              <a-entity mixin="model_m1_chat" position="-3.9 2.2 -30" rotation="0 0 0">
+              <a-entity mixin="model_m1_chatting" position="-3.9 2.2 -30" rotation="0 0 0">
               </a-entity>
             </a-entity>
           </a-entity>
@@ -862,10 +867,7 @@
                         scale="4 4 4" rotation="0 90 0">
               </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -54.75">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 3" position="-3.75 0.9 -54.75"
-                        scale="4 4 4" rotation="0 90 0">
+              <a-entity mixin="model_m1_cnn" position="-3.75 0.9 -54.75" rotation="0 0 0">
               </a-entity>
             </a-entity>
           </a-entity>

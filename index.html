@@ -278,7 +278,7 @@
     </a-mixin>
     <a-mixin id="model_plant_v2" gltf-model="#plant_v2" scale="0.01 0.01 0.01">
     </a-mixin>
-    <a-mixin id="model_pillar" gltf-model="#piedestal" scale="0.7 0.7 0.7">
+    <a-mixin id="model_pillar" gltf-model="#piedestal" scale="0.8 0.7 0.8">
     </a-mixin>
 
     <a-mixin id="model_wall_lamp" gltf-model="#lamp" scale="0.025 0.025 0.025">
@@ -369,8 +369,6 @@
         </a-entity>
         <a-entity id="green_plant" mixin="model_plant_v2" position="-6 0 -6" rotation="0 0 0">
         </a-entity>
-        <a-entity mixin="model_pillar" position="1 0 1" rotation="0 0 0">
-        </a-entity>
 
         <a-entity id="North">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="-5.25 2.5 -7.5" rotation="0 0 0">
@@ -446,6 +444,10 @@
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 -33.25" rotation="-90 0 0">
         </a-entity>>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 -33.75" rotation="90 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar" position="2.5 0 -8" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar" position="-2.5 0 -8" rotation="0 0 0">
         </a-entity>
 
         <a-entity id="Teleport_pads">
@@ -903,6 +905,10 @@
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="33.75 5 0" rotation="90 90 0">
         </a-entity>
+        <a-entity mixin="model_pillar" position="8 0 -2.5" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar" position="8 0 2.5" rotation="0 0 0">
+        </a-entity>
 
         <a-entity id="Teleport_pads">
           <a-entity id="Teleport_wall_right">
@@ -1276,6 +1282,10 @@
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 33.25" rotation="-90 0 0">
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 33.75" rotation="90 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar" position="2.5 0 8" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar" position="-2.5 0 8" rotation="0 0 0">
         </a-entity>
 
 

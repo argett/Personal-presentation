@@ -28,7 +28,15 @@
       "PB120 Wrenchs Low" (https://skfb.ly/6wV89) by Makovetkyi Volodymyr is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
       "Rigged Indoor-Plant Animation Test" (https://skfb.ly/Y6xT) by 3DHaupt is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
       "Palm Plant" (https://skfb.ly/6VsxQ) by SomeKevin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-     -->
+     
+
+      "Artemis" (https://skfb.ly/6GxVu) by Grégoire Desrousseaux is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/). 
+      "Diane I - Louvre Museum (Low Definition)" (https://skfb.ly/6nwJs) by Benjamin Bardou is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+      "Dragon" (https://skfb.ly/6sPwX) by 242trevor is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+      "Citadel (Mass Effect)" (https://skfb.ly/6CLEX) by Anthony Yanez is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+      "Guardian (Zelda BotW fan-art)" (https://skfb.ly/6sA8q) by NinKorr3D is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+      "Rosetta Stone | Ultra-Low Poly" (https://skfb.ly/68XNA) by whfmax is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+    -->
 
 </head>
 
@@ -133,6 +141,9 @@
       <img id="legend_project_musee_musee" src="assets/img/projets/autre/musee.png" />
 
 
+      <!--   3d models assets   -->
+
+      <!-- basics -->
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
       <a-asset-item id="lamp" src="assets/obj/lustre/scene.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
@@ -146,7 +157,26 @@
       <a-asset-item id="piedestal" src="assets/obj/pillar/pilier.glb" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
       </a-asset-item>
-
+      <!-- for piedestals -->
+      <a-asset-item id="piedestal_artemis" src="assets/obj/sculptures/artemis/scene.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="piedestal_diane" src="assets/obj/sculptures/diane/scene.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="piedestal_dragon" src="assets/obj/sculptures/dragon/scene.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="piedestal_masseffect" src="assets/obj/sculptures/masseffect/scene.gltf" res
+                    ponse-type="arraybuffer" crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="piedestal_rosetta" src="assets/obj/sculptures/pierre_de_rosette/scene.gltf" res
+                    ponse-type="arraybuffer" crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="piedestal_zelda" src="assets/obj/sculptures/zelda/scene.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <!-- for projects -->
       <a-asset-item id="m1_pa8" src="assets/obj/projects_m1/pa8/scene.gltf" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
       </a-asset-item>
@@ -279,6 +309,19 @@
     <a-mixin id="model_plant_v2" gltf-model="#plant_v2" scale="0.01 0.01 0.01">
     </a-mixin>
     <a-mixin id="model_pillar" gltf-model="#piedestal" scale="0.8 0.7 0.8">
+    </a-mixin>
+
+    <a-mixin id="model_pillar_artemis" gltf-model="#piedestal_artemis" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_pillar_diane" gltf-model="#piedestal_diane" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_pillar_dragon" gltf-model="#piedestal_dragon" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_pillar_masseffect" gltf-model="#piedestal_masseffect" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_pillar_rosetta" gltf-model="#piedestal_rosetta" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_pillar_zelda" gltf-model="#piedestal_zelda" scale="0.5 0.5 0.5">
     </a-mixin>
 
     <a-mixin id="model_wall_lamp" gltf-model="#lamp" scale="0.025 0.025 0.025">
@@ -447,7 +490,11 @@
         </a-entity>
         <a-entity mixin="model_pillar" position="2.5 0 -8.25" rotation="0 0 0">
         </a-entity>
+        <a-entity mixin="model_pillar_artemis" position="2.5 1.5 -8.25" rotation="0 0 0">
+        </a-entity>
         <a-entity mixin="model_pillar" position="-2.5 0 -8.25" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar_masseffect" position="-2.5 1.5 -8.25" rotation="0 0 0">
         </a-entity>
 
         <a-entity id="Teleport_pads">
@@ -907,7 +954,11 @@
         </a-entity>
         <a-entity mixin="model_pillar" position="8.25 0 -2.5" rotation="0 0 0">
         </a-entity>
+        <a-entity mixin="model_pillar_diane" position="8.25 1.5 -2.5" rotation="0 0 0">
+        </a-entity>
         <a-entity mixin="model_pillar" position="8.25 0 2.5" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar_zelda" position="8.25 1.5 2.5" rotation="0 0 0">
         </a-entity>
 
         <a-entity id="Teleport_pads">
@@ -1285,7 +1336,11 @@
         </a-entity>
         <a-entity mixin="model_pillar" position="2.5 0 8.25" rotation="0 0 0">
         </a-entity>
+        <a-entity mixin="model_pillar_rosetta" position="2.5 1.5 8.25" rotation="0 0 0">
+        </a-entity>
         <a-entity mixin="model_pillar" position="-2.5 0 8.25" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="model_pillar_dragon" position="2.5 1.5 8.25" rotation="0 0 0">
         </a-entity>
 
 

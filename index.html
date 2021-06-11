@@ -322,7 +322,8 @@
     </a-mixin>
     <a-mixin id="model_pillar_rosetta" gltf-model="#piedestal_rosetta" scale="5 5 5">
     </a-mixin>
-    <a-mixin id="model_pillar_zelda" gltf-model="#piedestal_zelda" scale="0.015 0.015 0.015">
+    <a-mixin id="model_pillar_zelda" gltf-model="#piedestal_zelda" scale="0.015 0.015 0.015"
+             animation-mixer="clip:WalkCycle; loop:infinite">
     </a-mixin>
 
     <a-mixin id="model_wall_lamp" gltf-model="#lamp" scale="0.025 0.025 0.025">
@@ -959,8 +960,7 @@
         </a-entity>
         <a-entity mixin="model_pillar" position="8.25 0 2.5" rotation="0 0 0">
         </a-entity>
-        <a-entity mixin="model_pillar_zelda" position="8.28 1.376 2.53" rotation="0 180 0"
-                  animation-mixer="clip:WalkCycle; loop:infinite">
+        <a-entity mixin="model_pillar_zelda" position="8.28 1.376 2.53" rotation="0 180 0">
         </a-entity>
 
         <a-entity id="Teleport_pads">

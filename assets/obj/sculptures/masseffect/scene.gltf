@@ -300,7 +300,7 @@
       "uri": "textures/02_-_Default_normal.png"
     },
     {
-      "uri": "textures/01_-_Default_baseColor.jpeg"
+      "uri": "textures/01_-_Default_baseColor.png"
     },
     {
       "uri": "textures/01_-_Default_normal.png"
@@ -588,4 +588,3 @@
     }
   ]
 }
-

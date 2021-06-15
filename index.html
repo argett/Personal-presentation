@@ -176,6 +176,31 @@
       <a-asset-item id="piedestal_zelda" src="assets/obj/sculptures/zelda/scene.glb" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
       </a-asset-item>
+      <!-- paintings -->
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/arcimboldo.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/beeple.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/edgar_degas.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/fontcuberta.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/kandinsky.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/magritte.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/picasso.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="painting_arcimboldo" src="assets/img/peinture/prosper_merime.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
       <!-- for projects -->
       <a-asset-item id="m1_pa8" src="assets/obj/projects_m1/pa8/scene.gltf" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
@@ -357,7 +382,23 @@
     </a-mixin>
     <a-mixin id="model_l2_objectiveEquilibrium" gltf-model="#l2_objectiveEquilibrium" scale="0.5 0.5 0.5">
     </a-mixin>
-
+    <!--    paintings models    -->
+    <a-mixin id="model_painting_arcimboldo" gltf-model="#painting_arcimboldo" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_beeple" gltf-model="#painting_beeple" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_edgar_degas" gltf-model="#painting_edgar_degas" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_fontcuberta" gltf-model="#painting_fontcuberta" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_kandinsky" gltf-model="#painting_kandinsky" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_magritte" gltf-model="#painting_magritte" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_picasso" gltf-model="#painting_picasso" scale="0.5 0.5 0.5">
+    </a-mixin>
+    <a-mixin id="model_painting_prosper_merime" gltf-model="#painting_prosper_merime" scale="0.5 0.5 0.5">
+    </a-mixin>
 
     <!--    Camera for text pop up    -->
 
@@ -431,6 +472,10 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
           </a-entity>
+          <a-entity mixin="model_painting_arcimboldo" position="5.25 2.5 -7.5" rotation="0 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_fontcuberta" position="-5.25 2.5 -7.5" rotation="0 0 0">
+          </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -7.5" rotation="-90 0 0"
                     class="phone clickable">
           </a-entity>
@@ -447,6 +492,10 @@
           <a-entity mixin="hall_hidden" scale="17 2 1" position="8.5 6 0" rotation="0 -90 0">
           </a-entity>
           <a-entity mixin="hall_light" position="8 6 0" rotation="90 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_beeple" position="7.5 2.5 -5.25" rotation="0 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_magritte" position="7.5 2.5 5.25" rotation="0 0 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="7.5 0.01 0" rotation="-90 0 0"
                     class="phone clickable">
@@ -465,6 +514,10 @@
           </a-entity>
           <a-entity mixin="hall_light" position="-8 6 0" rotation="90 0 0">
           </a-entity>
+          <a-entity mixin="model_painting_picasso" position="-7.5 2.5 5.25" rotation="0 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_prosper_merime" position="-7.5 2.5 -5.25" rotation="0 0 0">
+          </a-entity>
         </a-entity>
         <a-entity id="South">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="5.25 2.5 7.5" rotation="0 180 0">
@@ -478,6 +531,10 @@
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 8.5" rotation="0 180 0">
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_edgar_degas" position="5.25 2.5 7.5" rotation="0 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_kandinsky" position="-5.25 2.5 7.5" rotation="0 0 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 7.5" rotation="-90 0 0"
                     class="phone clickable">

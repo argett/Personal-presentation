@@ -329,7 +329,7 @@
 
     <!--    3D Models    -->
 
-    <a-mixin id="model_light"
+    <a-mixin id="model_light_spot_piedestal"
              light="type: spot; color: #FFF; intensity: 15; penumbra: 0.260; angle: 4.4; distance: 11; castShadow: false">
     </a-mixin>
 
@@ -382,7 +382,12 @@
     </a-mixin>
     <a-mixin id="model_l2_objectiveEquilibrium" gltf-model="#l2_objectiveEquilibrium" scale="0.5 0.5 0.5">
     </a-mixin>
+
     <!--    paintings models    -->
+    <a-mixin id="model_light_spot_painting"
+             light="type: spot; color: #ebd3d5; intensity: 6; penumbra: 0.5; angle: 30; distance: 5; castShadow: false">
+    </a-mixin>
+
     <a-mixin id="model_painting_arcimboldo" gltf-model="#painting_arcimboldo" scale="2 2 2">
     </a-mixin>
     <a-mixin id="model_painting_beeple" gltf-model="#painting_beeple" scale="2 2 2">
@@ -472,9 +477,13 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
           </a-entity>
-          <a-entity mixin="model_painting_arcimboldo" position="5.25 2.5 -7.45" rotation="90 0 0">
+          <a-entity mixin="model_painting_arcimboldo" position="5 2.5 -7.45" rotation="90 0 0">
           </a-entity>
-          <a-entity mixin="model_painting_fontcuberta" position="-5.25 2.5 -7.45" rotation="90 0 0">
+          <a-entity mixin="model_light_spot_painting" position="5 3.5 -4" rotation="-17 0 0">
+          </a-entity>
+          <a-entity mixin="model_painting_fontcuberta" position="-5 2.5 -7.45" rotation="90 0 0">
+          </a-entity>
+          <a-entity mixin="model_light_spot_painting" position="-5 3.5 -4" rotation="-17 0 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -7.5" rotation="-90 0 0"
                     class="phone clickable">
@@ -493,9 +502,13 @@
           </a-entity>
           <a-entity mixin="hall_light" position="8 6 0" rotation="90 0 0">
           </a-entity>
-          <a-entity mixin="model_painting_beeple" position="7.45 2.5 -5.25" rotation="90 -90 0">
+          <a-entity mixin="model_painting_beeple" position="7.45 2.5 -5" rotation="90 -90 0">
           </a-entity>
-          <a-entity mixin="model_painting_magritte" position="7.45 2.5 5.25" rotation="90 0 90">
+          <a-entity mixin="model_light_spot_painting" position="4.5 3.5 -5" rotation="-17 -90 0">
+          </a-entity>
+          <a-entity mixin="model_painting_magritte" position="7.45 2.5 5" rotation="90 0 90">
+          </a-entity>
+          <a-entity mixin="model_light_spot_painting" position="4.5 3.5 5" rotation="-17 -90 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="7.5 0.01 0" rotation="-90 0 0"
                     class="phone clickable">
@@ -514,9 +527,13 @@
           </a-entity>
           <a-entity mixin="hall_light" position="-8 6 0" rotation="90 0 0">
           </a-entity>
-          <a-entity mixin="model_painting_picasso" position="-7.45 2.5 5.25" rotation="90 90 0">
+          <a-entity mixin="model_painting_picasso" position="-7.45 2.5 5" rotation="90 90 0">
           </a-entity>
-          <a-entity mixin="model_painting_prosper_merime" position="-7.45 2.5 -5.25" rotation="90 90 0">
+          <a-entity mixin="model_light_spot_painting" position="-4 3.5 -5" rotation="-17 90 0">
+          </a-entity>
+          <a-entity mixin="model_painting_prosper_merime" position="-7.45 2.5 -5" rotation="90 90 0">
+          </a-entity>
+          <a-entity mixin="model_light_spot_painting" position="-3.75 3.5 -5" rotation="-17 90 0">
           </a-entity>
         </a-entity>
         <a-entity id="South">
@@ -532,9 +549,13 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
           </a-entity>
-          <a-entity mixin="model_painting_edgar_degas" position="5.25 2.5 7.45" rotation="90 180 0">
+          <a-entity mixin="model_painting_edgar_degas" position="5 2.5 7.45" rotation="90 180 0">
           </a-entity>
-          <a-entity mixin="model_painting_kandinsky" position="-5.25 2.5 7.45" rotation="90 180 0">
+          <a-entity mixin="model_light_spot_painting" position="5 3.5 4" rotation="-17 180 180">
+          </a-entity>
+          <a-entity mixin="model_painting_kandinsky" position="-5 2.5 7.45" rotation="90 180 0">
+          </a-entity>
+          <a-entity mixin="model_light_spot_painting" position="-5 3.5 4" rotation="-17 180 180">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 7.5" rotation="-90 0 0"
                     class="phone clickable">
@@ -554,13 +575,13 @@
         </a-entity>
         <a-entity mixin="model_pillar_artemis" position="2.38 1.05 -8.18" rotation="0 0 0">
         </a-entity>
-        <a-entity mixin="model_light" position="2.2 10 -8.250" rotation="-87 -90 90">
+        <a-entity mixin="model_light_spot_piedestal" position="2.2 10 -8.250" rotation="-87 -90 90">
         </a-entity>
         <a-entity mixin="model_pillar" position="-2.5 0 -8.25" rotation="0 0 0">
         </a-entity>
         <a-entity mixin="model_pillar_masseffect" position="-2.67 2.25 -7.675" rotation="100 150 -15.8">
         </a-entity>
-        <a-entity mixin="model_light" position="-2.2 10 -8.250" rotation="-93 -90 90">
+        <a-entity mixin="model_light_spot_piedestal" position="-2.2 10 -8.250" rotation="-93 -90 90">
         </a-entity>
 
         <a-entity id="Teleport_pads">
@@ -1022,13 +1043,13 @@
         </a-entity>
         <a-entity mixin="model_pillar_diane" position="8.25 1.41 -2.48" rotation="0 180 0">
         </a-entity>
-        <a-entity mixin="model_light" position="8.25 10 -2.2" rotation="-93 180 0">
+        <a-entity mixin="model_light_spot_piedestal" position="8.25 10 -2.2" rotation="-93 180 0">
         </a-entity>
         <a-entity mixin="model_pillar" position="8.25 0 2.5" rotation="0 0 0">
         </a-entity>
         <a-entity mixin="model_pillar_zelda" position="8.28 1.376 2.53" rotation="0 180 0">
         </a-entity>
-        <a-entity mixin="model_light" position="8.25 10 2.2" rotation="-87 180 0">
+        <a-entity mixin="model_light_spot_piedestal" position="8.25 10 2.2" rotation="-87 180 0">
         </a-entity>
 
         <a-entity id="Teleport_pads">
@@ -1408,13 +1429,13 @@
         </a-entity>
         <a-entity mixin="model_pillar_rosetta" position="2.5 1.5 8.25" rotation="-100 -106 0">
         </a-entity>
-        <a-entity mixin="model_light" position="2.2 10 8.250" rotation="-87 -90 90">
+        <a-entity mixin="model_light_spot_piedestal" position="2.2 10 8.250" rotation="-87 -90 90">
         </a-entity>
         <a-entity mixin="model_pillar" position="-2.5 0 8.25" rotation="0 0 0">
         </a-entity>
         <a-entity mixin="model_pillar_dragon" position="-2.68 1.435 7.77" rotation="0 160 0">
         </a-entity>
-        <a-entity mixin="model_light" position="-2.2 10 8.250" rotation="-93 -90 90">
+        <a-entity mixin="model_light_spot_piedestal" position="-2.2 10 8.250" rotation="-93 -90 90">
         </a-entity>
 
 

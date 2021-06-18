@@ -75,31 +75,36 @@ var putBack = function () {
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 
   // remove objects to correspond to the graphical power of the user
-  var radioButtons = document.getElementsById('graphic')
-  for (i = 0; i < radioButtons.length; i++) {
-    if (radioButtons[i].checked) {
-      if (radioButtons[i].id == "medium") {
-        var objs = document.querySelectorAll('.high')
-        if (AFRAME.utils.device.isMobile()) {
-          for (var i = 0; i < objs.length; ++i) {
-            objs[i].remove()
-          }
-        }
-      }
-      else if (radioButtons[i].id == "low") {
-        var objs = document.querySelectorAll('.high')
-        if (AFRAME.utils.device.isMobile()) {
-          for (var i = 0; i < objs.length; ++i) {
-            objs[i].remove()
-          }
-        }
-        var objs = document.querySelectorAll('.medium')
-        if (AFRAME.utils.device.isMobile()) {
-          for (var i = 0; i < objs.length; ++i) {
-            objs[i].remove()
-          }
-        }
-      }
+  var radioButton = document.getElementById('high')
+  if (radioButton.checked)
+    setGraphics(radioButton)
+  console.log("high")
+  var radioButton = document.getElementById('medium')
+  if (radioButton.checked)
+    setGraphics(radioButton)
+  console.log("high")
+  var radioButton = document.getElementById('low')
+  if (radioButton.checked)
+    setGraphics(radioButton)
+  console.log("high")
+}
+
+function setGraphics(button) {
+  console.log("trouve")
+  if (button.value == "medium") {
+    var objs = document.querySelectorAll('.high')
+    for (var i = 0; i < objs.length; ++i) {
+      objs[i].remove()
+    }
+  }
+  else if (button.value == "low") {
+    var objs = document.querySelectorAll('.high')
+    for (var i = 0; i < objs.length; ++i) {
+      objs[i].remove()
+    }
+    var objs = document.querySelectorAll('.medium')
+    for (var i = 0; i < objs.length; ++i) {
+      objs[i].remove()
     }
   }
 }

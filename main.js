@@ -73,6 +73,35 @@ var putBack = function () {
   document.querySelector('#container').style.zIndex = '-2'
   document.getElementsByTagName('a-scene')[0].style.zIndex = 'auto'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
+
+  // remove objects to correspond to the graphical power of the user
+  var radioButtons = document.getElementsByName('graphic')
+  for (i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked) {
+      if (radioButtons[i].id == "medium") {
+        var objs = document.querySelectorAll('.high')
+        if (AFRAME.utils.device.isMobile()) {
+          for (var i = 0; i < objs.length; ++i) {
+            objs[i].remove()
+          }
+        }
+      }
+      else if (radioButtons[i].id == "low") {
+        var objs = document.querySelectorAll('.high')
+        if (AFRAME.utils.device.isMobile()) {
+          for (var i = 0; i < objs.length; ++i) {
+            objs[i].remove()
+          }
+        }
+        var objs = document.querySelectorAll('.medium')
+        if (AFRAME.utils.device.isMobile()) {
+          for (var i = 0; i < objs.length; ++i) {
+            objs[i].remove()
+          }
+        }
+      }
+    }
+  }
 }
 
 var putFront = function (evt) {

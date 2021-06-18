@@ -82,11 +82,11 @@ var putBack = function () {
   var radioButton = document.getElementById('medium')
   if (radioButton.checked)
     setGraphics(radioButton)
-  console.log("high")
+  console.log("medium")
   var radioButton = document.getElementById('low')
   if (radioButton.checked)
     setGraphics(radioButton)
-  console.log("high")
+  console.log("low")
 }
 
 function setGraphics(button) {

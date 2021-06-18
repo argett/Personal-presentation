@@ -75,7 +75,7 @@ var putBack = function () {
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
 
   // remove objects to correspond to the graphical power of the user
-  var radioButtons = document.getElementsByName('graphic')
+  var radioButtons = document.getElementsById('graphic')
   for (i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
       if (radioButtons[i].id == "medium") {

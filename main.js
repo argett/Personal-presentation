@@ -77,38 +77,40 @@ var putBack = function () {
   // remove objects to correspond to the graphical power of the user
   var radioButton = document.getElementById('high')
   if (radioButton.checked) {
+    console.log("high selected")
     setGraphics(radioButton)
-    console.log("high")
   }
   var radioButton = document.getElementById('medium')
   if (radioButton.checked) {
+    console.log("medium selected")
     setGraphics(radioButton)
-    console.log("medium")
   }
   var radioButton = document.getElementById('low')
   if (radioButton.checked) {
+    console.log("low selected")
     setGraphics(radioButton)
-    console.log("low")
   }
 }
 
 function setGraphics(button) {
-  console.log("on delete")
   if (button.value == "medium") {
+    console.log("on delete tout ce qui est high car on a choisi medium")
     var objs = document.querySelectorAll('.high')
     for (var i = 0; i < objs.length; ++i) {
+      console.log("on enleve " + objs[i].id)
       objs[i].remove()
     }
   }
   else if (button.value == "low") {
+    console.log("on delete tout ce qui est high et medium car on a choisi low")
     var objs = document.querySelectorAll('.high')
     for (var i = 0; i < objs.length; ++i) {
-      console.log(objs[i].id)
+      console.log("high " + objs[i].id)
       objs[i].remove()
     }
     var objs2 = document.querySelectorAll('.medium')
     for (var i = 0; i < objs2.length; ++i) {
-      console.log(objs2[i].id)
+      console.log("medium " + objs2[i].id)
       objs2[i].remove()
     }
   }

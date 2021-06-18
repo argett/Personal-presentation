@@ -76,21 +76,24 @@ var putBack = function () {
 
   // remove objects to correspond to the graphical power of the user
   var radioButton = document.getElementById('high')
-  if (radioButton.checked)
+  if (radioButton.checked) {
     setGraphics(radioButton)
-  console.log("high")
+    console.log("high")
+  }
   var radioButton = document.getElementById('medium')
-  if (radioButton.checked)
+  if (radioButton.checked) {
     setGraphics(radioButton)
-  console.log("medium")
+    console.log("medium")
+  }
   var radioButton = document.getElementById('low')
-  if (radioButton.checked)
+  if (radioButton.checked) {
     setGraphics(radioButton)
-  console.log("low")
+    console.log("low")
+  }
 }
 
 function setGraphics(button) {
-  console.log("trouve")
+  console.log("on delete")
   if (button.value == "medium") {
     var objs = document.querySelectorAll('.high')
     for (var i = 0; i < objs.length; ++i) {
@@ -100,11 +103,13 @@ function setGraphics(button) {
   else if (button.value == "low") {
     var objs = document.querySelectorAll('.high')
     for (var i = 0; i < objs.length; ++i) {
+      console.log(objs[i].id)
       objs[i].remove()
     }
-    var objs = document.querySelectorAll('.medium')
-    for (var i = 0; i < objs.length; ++i) {
-      objs[i].remove()
+    var objs2 = document.querySelectorAll('.medium')
+    for (var i = 0; i < objs2.length; ++i) {
+      console.log(objs2[i].id)
+      objs2[i].remove()
     }
   }
 }

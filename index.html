@@ -347,6 +347,9 @@
 
     <!--    3D Models    -->
 
+    <a-mixin id="model_light_spot_objects"
+             light="type: spot; intensity: 10; penumbra: 1; angle: 15; distance: 6; castShadow: false">
+    </a-mixin>
     <a-mixin id="model_light_spot_piedestal"
              light="type: spot; color: #FFF; intensity: 19; penumbra: 0.260; angle: 4.4; distance: 11; castShadow: false">
     </a-mixin>
@@ -1259,6 +1262,9 @@
               </a-plane>
 
               <a-entity mixin="model_l3_newAdventure" position="18.25  0.8 -3.75" rotation="0 90 0">
+              </a-entity>
+              <a-entity class="medium" mixin="model_light_spot_objects" color="#ffb7b9" position="16.65 6 -4"
+                        rotation="-90 0 0">
               </a-entity>
             </a-entity>
           </a-entity>

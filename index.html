@@ -75,7 +75,7 @@
   </div>
 
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse;" raycaster="objects: .raycastable"
-           webxr="referenceSpaceType: local-floor" background="color: black" stats>
+           webxr="referenceSpaceType: local-floor" background="color: black">
     <a-assets timeout="5000">
 
       <!--<img id="texture_sky" src="assets/img/sky.jpg" />-->
@@ -295,9 +295,6 @@
     <a-mixin id="hall_hidden" geometry="primitive: plane;" material="src: #texture_hall_hidden; repeat: 10 1">
     </a-mixin>
 
-    <a-mixin id="hall_light" light="type: spot; color: #dba62b; intensity: 1; angle: 90; castShadow: false">
-    </a-mixin>
-
 
     <!--    Corridor's assets     -->
 
@@ -327,6 +324,22 @@
     </a-mixin>
 
 
+    <!--    Lights    -->
+
+    <a-mixin id="hall_light"
+             light="type: spot; color: #dba62b; intensity: 1; angle: 90; distance: 10; castShadow: false">
+    </a-mixin>
+    <a-mixin id="model_light_spot_objects"
+             light="type: spot; intensity: 14; penumbra: 1; angle: 20; distance: 5.5; castShadow: false">
+    </a-mixin>
+    <a-mixin id="model_light_spot_piedestal"
+             light="type: spot; color: #FFF; intensity: 19; penumbra: 0.260; angle: 4.4; distance: 11; castShadow: false">
+    </a-mixin>
+    <a-mixin id="model_light_spot_painting"
+             light="type: spot; color: #ebd3d5; intensity: 5; penumbra: 0.5; angle: 30; distance: 5; castShadow: false">
+    </a-mixin>
+
+
     <!--    Human interraction    -->
 
     <a-mixin id="interraction_info_bulle" geometry="primitive: circle; radius: 0.4"
@@ -346,13 +359,6 @@
 
 
     <!--    3D Models    -->
-
-    <a-mixin id="model_light_spot_objects"
-             light="type: spot; intensity: 14; penumbra: 1; angle: 20; distance: 5.5; castShadow: false">
-    </a-mixin>
-    <a-mixin id="model_light_spot_piedestal"
-             light="type: spot; color: #FFF; intensity: 19; penumbra: 0.260; angle: 4.4; distance: 11; castShadow: false">
-    </a-mixin>
 
     <a-mixin id="model_plant_v1" gltf-model="#plant_v1" scale="0.5 0.5 0.5">
     </a-mixin>
@@ -405,9 +411,6 @@
     </a-mixin>
 
     <!--    paintings models    -->
-    <a-mixin id="model_light_spot_painting"
-             light="type: spot; color: #ebd3d5; intensity: 5; penumbra: 0.5; angle: 30; distance: 5; castShadow: false">
-    </a-mixin>
 
     <a-mixin id="model_painting_arcimboldo" gltf-model="#painting_arcimboldo" scale="2 2 2">
     </a-mixin>

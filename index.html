@@ -348,7 +348,7 @@
     <!--    3D Models    -->
 
     <a-mixin id="model_light_spot_objects"
-             light="type: spot; intensity: 10; penumbra: 1; angle: 15; distance: 6; castShadow: false">
+             light="type: spot; intensity: 14; penumbra: 1; angle: 20; distance: 5.5; castShadow: false">
     </a-mixin>
     <a-mixin id="model_light_spot_piedestal"
              light="type: spot; color: #FFF; intensity: 19; penumbra: 0.260; angle: 4.4; distance: 11; castShadow: false">
@@ -716,6 +716,9 @@
 
               <a-entity mixin="model_m1_pa8" position="3.75 0.8 -17.5" rotation="0 -30 0">
               </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffcccc" position="4 6 -17.8"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -761,6 +764,9 @@
 
               <a-entity mixin="model_m1_parking" position="3.75 0.8 -30" rotation=" 0 -10 0">
               </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#c4c4c4" position="4 6 -30.2"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -805,6 +811,9 @@
               </a-plane>
 
               <a-entity mixin="model_m1_robot" position="3.75 0.7 -43" rotation="0 50 0">
+              </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#c6edf4" position="4 6 -42.75"
+                        rotation="-90 0 0">
               </a-entity>
             </a-entity>
           </a-entity>
@@ -852,6 +861,11 @@
               <a-entity text="align: center; color: white; value:Legende image 3" position="3.75 0.9 -54.75"
                         scale="4 4 4" rotation="0 -90 0">
               </a-entity>
+
+
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#e9edcd" position="4 6 -55.2"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
         </a-entity>
@@ -897,6 +911,9 @@
 
               <a-entity mixin="model_m1_fusee" position="-3.75 0.8 -17.5" rotation="0 -120 0">
               </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#a01f46" position="-4 6 -17.6"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -941,6 +958,9 @@
               </a-plane>
 
               <a-entity mixin="model_m1_chatting" position="-3.9 2.2 -30" rotation="0 0 0">
+              </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#b1b1b1" position="-4 6 -30.2"
+                        rotation="-90 0 0">
               </a-entity>
             </a-entity>
           </a-entity>
@@ -1032,6 +1052,9 @@
               </a-entity>
 
               <a-entity mixin="model_m1_cnn" position="-3.75 1.2 -54.75" rotation="0 -10 0">
+              </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ddddd9" position="-3.8 6 -54.8"
+                        rotation="-90 0 0">
               </a-entity>
             </a-entity>
           </a-entity>
@@ -1171,6 +1194,9 @@
 
               <a-entity mixin="model_l2_bwarioKart" position="17.5 0.8 3.75" rotation="0 -110 0">
               </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#319bf2" position="17.6 6 4"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -1213,6 +1239,9 @@
               </a-entity>
 
               <a-entity mixin="model_l2_objectiveEquilibrium" position="30 1.6 3.75" rotation="45 10 45">
+              </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#b3ef98" position="30.1 6 4"
+                        rotation="-90 0 0">
               </a-entity>
             </a-entity>
           </a-entity>
@@ -1263,7 +1292,7 @@
 
               <a-entity mixin="model_l3_newAdventure" position="18.25  0.8 -3.75" rotation="0 90 0">
               </a-entity>
-              <a-entity class="medium" mixin="model_light_spot_objects" light="color:#ffb7b9" position="17.7 6 -4"
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffb7b9" position="17.7 6 -4"
                         rotation="-90 0 0">
               </a-entity>
             </a-entity>
@@ -1309,6 +1338,9 @@
 
               <a-entity mixin="model_l3_psy" position="30 1.4 -3.75" rotation="0 140 0">
               </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#f1d18f" position="30 6 -4"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -1352,6 +1384,9 @@
 
               <a-entity mixin="model_l3_graphs" position="42.5 1.9 -3.75" rotation="0 30 30">
               </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffffff" position="42.5 6 -4"
+                        rotation="-90 0 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -1393,7 +1428,10 @@
                         scale="4 4 4" rotation="0 0 0">
               </a-entity>
 
-              <a-entity mixin="model_l3_garage" position="54.75 0.7 -3.75" rotation="0 0 0">
+              <a-entity mixin="model_l3_garage" position="55 0.7 -3.75" rotation="0 0 0">
+              </a-entity>
+              <a-entity class="high" mixin="model_light_spot_objects" light="color:#adac92" position="55 6 -4"
+                        rotation="-90 0 0">
               </a-entity>
             </a-entity>
           </a-entity>

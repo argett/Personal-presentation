@@ -94,23 +94,18 @@ var putBack = function () {
 
 function setGraphics(button) {
   if (button.value == "medium") {
-    console.log("on delete tout ce qui est high car on a choisi medium")
     var objs = document.querySelectorAll('.high')
     for (var i = 0; i < objs.length; ++i) {
-      console.log("on enleve " + objs[i].id)
       objs[i].remove()
     }
   }
   else if (button.value == "low") {
-    console.log("on delete tout ce qui est high et medium car on a choisi low")
     var objs = document.querySelectorAll('.high')
     for (var i = 0; i < objs.length; ++i) {
-      console.log("high " + objs[i].id)
       objs[i].remove()
     }
     var objs2 = document.querySelectorAll('.medium')
     for (var i = 0; i < objs2.length; ++i) {
-      console.log("medium " + objs2[i].id)
       objs2[i].remove()
     }
   }
@@ -127,6 +122,7 @@ var putFront = function (evt) {
   var mobile = document.getElementById('mobile')
   var linkedin = document.getElementById('linkedin')
   var button = document.getElementById('start_experience')
+  var radioButton = document.getElementById('graphics')
 
   // remove first "
   var title = JSON.stringify(selectedProject.title).substring(1)
@@ -140,6 +136,7 @@ var putFront = function (evt) {
   pc.innerHTML = ''
   mobile.innerHTML = ''
   linkedin.innerHTML = ''
+  radioButton.innerHTML = ''
   button.innerHTML = 'Fermer'
   document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
 }

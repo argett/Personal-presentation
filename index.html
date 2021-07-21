@@ -133,6 +133,11 @@
       <img id="legend_project_robot_manipulation" src="assets/img/projets/m1/projet_robot_manipulation.png" />
       <img id="legend_project_robot_navigation" src="assets/img/projets/m1/projet_robot_navigation.png" />
 
+      <img id="texture_project_raytracing_comparaison" src="assets/img/projets/m1/projet_raytracing_comparaison.jpg" />
+      <img id="texture_project_raytracing_moyen" src="assets/img/projets/m1/projet_raytracing_moyen.jpg" />
+      <img id="legend_project_raytracing_comparaison" src="assets/img/projets/m1/projet_raytracing_comparaison.png" />
+      <img id="legend_project_raytracing_moyen" src="assets/img/projets/m1/projet_raytracing_moyen.png" />
+
       <!-- projects images L3 -->
       <img id="texture_project_news_homepage" src="assets/img/projets/l3/projet_news_homepage.jpg" />
       <img id="texture_project_news_map" src="assets/img/projets/l3/projet_news_map.jpg" />
@@ -862,18 +867,19 @@
                         class="raycastable menu-button clickable">
               </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 -49.5">
+              <a-plane src="#texture_project_raytracing_comparaison" height="2" width="2" rotation="-5 -90 0"
+                       position="4 2 -49.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 1" position="3.75 0.9 -49.5"
-                        scale="4 4 4" rotation="0 -90 0">
-              </a-entity>
-
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 -52.25">
+              <a-plane src="#legend_project_raytracing_comparaison" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.9 -49.5">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 2" position="3.75 0.9 -52.25"
-                        scale="4 4 4" rotation="0 -90 0">
-              </a-entity>
 
+              <a-plane src="#texture_project_raytracing_moyen" height="2" width="2" rotation="-5 -90 0"
+                       position="4 2 -52.25">
+              </a-plane>
+              <a-plane src="#legend_project_raytracing_moyen" material="transparent: true; blending: additive"
+                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.9 -52.25">
+              </a-plane>
               <a-entity mixin="model_m1_raytracing" position="4.62 2 -56.25" rotation="30 -115 -17.8">
               </a-entity>
               <a-entity class="high" mixin="model_light_spot_objects" light="color:#e9edcd" position="4 6 -55.2"

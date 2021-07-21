@@ -39,7 +39,7 @@ var projectsInfo = {
     title: 'Jeux mobile sous Unity',
     description: "Projet réalisé à 4 en C# sous Unity3D. Le but du projet est de proposer des mini-jeux liés à une actualite jouable sur mobile. Et cela pour faire découvrir une actualité de façon ludique. Nous avons donc utilisé Unity car le logiciel possède le double intérêt de pouvoir réaliser un jeux simplement en plus de pouvoir le transférer automatiquement vers un mobile sans avoir à passer par une application tier tel qu'Electron. Nous avons au final créé 2 mini-jeux en 2D mais nous n'avons pas uploadé notre application sur le Playstore."
   },
-  L3_Qst: {
+  L3_Question: {
     title: 'Question pour un champion',
     description: "Projet réalisé en duo en Java avec une interface entièrement créée à la main. La problématique était de créer un jeu à questions avec plusieurs participants. Chaque joueur doit répondre à une question selon différentes thématiques choisies à l'avance. Le temps est compté, et le joueur ayant le plus de bonnes réponses et avec le meilleur temps gagne. Il y a différents types de questions, certaines étant à choix multiples, d'autres en vrai/faux mais aussi des questions où le joueur doit entrer sa propre réponse. Les participants doivent pouvoir évidemment avoir la possibilité d'ajouter ou supprimer des questions avant la partie."
   },

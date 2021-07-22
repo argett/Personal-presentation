@@ -382,6 +382,8 @@
 
 
     <!--    3D Models    -->
+    <a-mixin id="model_musee" gltf-model="#MUSEE" scale="1 1 1">
+    </a-mixin>
 
     <a-mixin id="model_plant_v1" gltf-model="#plant_v1" scale="0.5 0.5 0.5">
     </a-mixin>
@@ -494,7 +496,7 @@
         <a-plane id="northwall" height="50" width="150" color="black" position="75 25 -0" rotation="0 -90 0"></a-plane>
 
 
-        <a-entity mixin="MUSEE" scale="1 1 1" position="0 0 0.2" rotation="0 0 0">
+        <a-entity mixin="model_musee" position="0 0 0.2" rotation="0 0 0">
         </a-entity>
 
 

@@ -177,6 +177,12 @@
       <!--   3d models assets   -->
 
       <!-- basics -->
+
+      <a-asset-item id="MUSEE" src="assets/obj/museum/untitled.glb" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+
+
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
       <a-asset-item id="lamp" src="assets/obj/lustre/scene.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
@@ -487,6 +493,11 @@
         <a-plane id="eastwall" height="50" width="150" color="black" position="-75 25 0" rotation="0 90 0"></a-plane>
         <a-plane id="northwall" height="50" width="150" color="black" position="0 25 75" rotation="0 180 0"></a-plane>
         <a-plane id="northwall" height="50" width="150" color="black" position="75 25 -0" rotation="0 -90 0"></a-plane>
+
+
+        <a-entity mixin="MUSEE" scale="1 1 1" position="0 0 0" rotation="0 0 0">
+        </a-entity>
+
 
         <a-entity mixin="hall_ground" scale="15 15 1" position="0 0 0" rotation="-90 0 0">
         </a-entity>

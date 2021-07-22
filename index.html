@@ -178,7 +178,8 @@
 
       <!-- basics -->
 
-      <a-asset-item id="MUSEE" src="assets/obj/museum/scene.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
+      <a-asset-item id="aile_m1" src="assets/obj/museum/aileM1.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
       </a-asset-item>
 
 
@@ -382,7 +383,7 @@
 
 
     <!--    3D Models    -->
-    <a-mixin id="model_musee" gltf-model="#MUSEE" scale="1 1 1">
+    <a-mixin id="model_musee_aile_m1" gltf-model="#aile_m1" scale="1 1 1">
     </a-mixin>
 
     <a-mixin id="model_plant_v1" gltf-model="#plant_v1" scale="0.5 0.5 0.5">
@@ -496,7 +497,7 @@
         <a-plane id="northwall" height="50" width="150" color="black" position="75 25 -0" rotation="0 -90 0"></a-plane>
 
 
-        <a-entity mixin="model_musee" position="0 0 0.2" rotation="0 0 0">
+        <a-entity mixin="model_musee_aile_m1" position="0 0 0.2" rotation="0 0 0">
         </a-entity>
 
 

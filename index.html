@@ -78,8 +78,6 @@
            webxr="referenceSpaceType: local-floor" background="color: black" stats>
     <a-assets timeout="5000">
 
-      <!--<img id="texture_sky" src="assets/img/sky.jpg" />-->
-      <img id="texture_wall" src="assets/img/wall.jpg" />
       <img id="texture_wip" src="assets/img/wip.jpg" />
 
       <img id="texture_spawn_ground" src="assets/img/spawn.jpg" />
@@ -87,10 +85,6 @@
       <img id="texture_hall_beam" src="assets/img/hall-beam.jpg" />
       <img id="texture_hall_ceiling" src="assets/img/hall-ceiling.jpg" />
       <img id="texture_hall_hidden" src="assets/img/hall-hidden.jpg" />
-      <img id="texture_recess_wall" src="assets/img/recess-wall.jpg" />
-      <img id="texture_recess_floor" src="assets/img/recess-ground.jpg" />
-      <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
-
       <img id="texture_interraction_tp" src="assets/img/teleport.jpg" />
       <img id="texture_interraction_info" src="assets/img/info.jpg" />
       <img id="texture_interraction_wip" src="assets/img/imgAvenir.jpg" />
@@ -177,14 +171,16 @@
       <!--   3d models assets   -->
 
       <!-- basics -->
-
       <a-asset-item id="aile_m1" src="assets/obj/museum/aileM1.gltf" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
       </a-asset-item>
-
-
-      <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
+      <a-asset-item id="aile_l23" src="assets/obj/museum/aileL23.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
       </a-asset-item>
+      <a-asset-item id="aile_autre" src="assets/obj/museum/aileAutre.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
+      </a-asset-item>
+
       <a-asset-item id="lamp" src="assets/obj/lustre/scene.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
       <a-asset-item id="plant_v1" src="assets/obj/plante/scene.gltf" res ponse-type="arraybuffer"
@@ -385,6 +381,10 @@
     <!--    3D Models    -->
     <a-mixin id="model_musee_aile_m1" gltf-model="#aile_m1" scale="1 1 1">
     </a-mixin>
+    <a-mixin id="model_musee_aile_l23" gltf-model="#aile_l23" scale="1 1 1">
+    </a-mixin>
+    <a-mixin id="model_musee_aile_aurte" gltf-model="#aile_autre" scale="1 1 1">
+    </a-mixin>
 
     <a-mixin id="model_plant_v1" gltf-model="#plant_v1" scale="0.5 0.5 0.5">
     </a-mixin>
@@ -495,11 +495,6 @@
         <a-plane id="eastwall" height="50" width="150" color="black" position="-75 25 0" rotation="0 90 0"></a-plane>
         <a-plane id="northwall" height="50" width="150" color="black" position="0 25 75" rotation="0 180 0"></a-plane>
         <a-plane id="northwall" height="50" width="150" color="black" position="75 25 -0" rotation="0 -90 0"></a-plane>
-
-
-        <a-entity mixin="model_musee_aile_m1" position="0 0 0.2" rotation="0 0 0">
-        </a-entity>
-
 
         <a-entity mixin="hall_ground" scale="15 15 1" position="0 0 0" rotation="-90 0 0">
         </a-entity>
@@ -624,6 +619,9 @@
       <!-- M1 -->
 
       <a-entity id="M1 - projects">
+        <a-entity mixin="model_musee_aile_m1" position="-10 0 0.2" rotation="0 0 0">
+        </a-entity>
+
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 -33.25" rotation="-90 0 0">
         </a-entity>>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 -33.75" rotation="90 0 0">
@@ -712,382 +710,204 @@
         <a-entity id="WallRight">
 
           <a-entity id="PA8">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 -8.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -14">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 -90 0" position="3 0.4 -14">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 0.8 -14">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -14">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="4 2.4 -9">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="4 2.4 -19">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 -90 0" position="5 2.4 -14">
-              </a-entity>
+            <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_pa8_home" height="2" width="2.6" rotation="-5 -90 0" position="4 2 -12">
+            </a-plane>
+            <a-plane src="#legend_project_pa8_home" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 -90 0" position="3.75 0.95 -12">
+            </a-plane>
 
-              <a-plane src="#texture_project_pa8_home" height="2" width="2.6" rotation="-5 -90 0" position="4 2 -12">
-              </a-plane>
-              <a-plane src="#legend_project_pa8_home" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 -90 0" position="3.75 0.95 -12">
-              </a-plane>
+            <a-plane src="#texture_project_pa8_booklet" height="2" width="2.4" rotation="-5 -90 0"
+                     position="4 2 -15.25">
+            </a-plane>
+            <a-plane src="#legend_project_pa8_booklet" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 -90 0" position="3.75 0.95 -15.25">
+            </a-plane>
 
-              <a-plane src="#texture_project_pa8_booklet" height="2" width="2.4" rotation="-5 -90 0"
-                       position="4 2 -15.25">
-              </a-plane>
-              <a-plane src="#legend_project_pa8_booklet" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 -90 0" position="3.75 0.95 -15.25">
-              </a-plane>
-
-              <a-entity mixin="model_m1_pa8" position="3.75 0.8 -17.5" rotation="0 -30 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffcccc" position="4 6 -17.8"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_m1_pa8" position="3.75 0.8 -17.5" rotation="0 -30 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffcccc" position="4 6 -17.8"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="Parking">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -20.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -26.5">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 -90 0" position="3 0.4 -26.5">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 0.8 -26.5">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -26.5">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="4 2.4 -21.5">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="4 2.4 -31.5">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 -90 0" position="5 2.4 -26.5">
-              </a-entity>
+            <a-entity id="M1_Parking" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -22.5"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_Parking" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -22.5"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_parking_base" height="2" width="2.2" rotation="-5 -90 0"
+                     position="4 2 -24.5">
+            </a-plane>
+            <a-plane src="#legend_project_parking_base" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 -90 0" position="3.75 0.95 -24.5">
+            </a-plane>
 
-              <a-plane src="#texture_project_parking_base" height="2" width="2.2" rotation="-5 -90 0"
-                       position="4 2 -24.5">
-              </a-plane>
-              <a-plane src="#legend_project_parking_base" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 -90 0" position="3.75 0.95 -24.5">
-              </a-plane>
+            <a-plane src="#texture_project_parking_analysed" height="2" width="2.4" rotation="-5 -90 0"
+                     position="4 2 -27.5">
+            </a-plane>
+            <a-plane src="#legend_project_parking_analysed" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -27.5">
+            </a-plane>
 
-              <a-plane src="#texture_project_parking_analysed" height="2" width="2.4" rotation="-5 -90 0"
-                       position="4 2 -27.5">
-              </a-plane>
-              <a-plane src="#legend_project_parking_analysed" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -27.5">
-              </a-plane>
-
-              <a-entity mixin="model_m1_parking" position="3.75 0.8 -30" rotation=" 0 -10 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#c4c4c4" position="4 6 -30.2"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_m1_parking" position="3.75 0.8 -30" rotation=" 0 -10 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#c4c4c4" position="4 6 -30.2"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="RobotArticule">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -32.75">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -39">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 -90 0" position="3 0.4 -39">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 0.8 -39">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -39">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="4 2.4 -34">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="4 2.4 -44">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 -90 0" position="5 2.4 -39">
-              </a-entity>
+            <a-entity id="M1_Robot" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -35"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_Robot" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -35"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_robot_navigation" height="2" width="2.2" rotation="-5 -90 0"
+                     position="4 2 -37">
+            </a-plane>
+            <a-plane src="#legend_project_robot_navigation" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -37">
+            </a-plane>
 
-              <a-plane src="#texture_project_robot_navigation" height="2" width="2.2" rotation="-5 -90 0"
-                       position="4 2 -37">
-              </a-plane>
-              <a-plane src="#legend_project_robot_navigation" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -37">
-              </a-plane>
+            <a-plane src="#texture_project_robot_manipulation" height="2" width="2.2" rotation="-5 -90 0"
+                     position="4 2 -40">
+            </a-plane>
+            <a-plane src="#legend_project_robot_manipulation" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -40">
+            </a-plane>
 
-              <a-plane src="#texture_project_robot_manipulation" height="2" width="2.2" rotation="-5 -90 0"
-                       position="4 2 -40">
-              </a-plane>
-              <a-plane src="#legend_project_robot_manipulation" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.95 -40">
-              </a-plane>
-
-              <a-entity mixin="model_m1_robot" position="3.75 0.7 -43" rotation="0 50 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#c6edf4" position="4 6 -42.75"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_m1_robot" position="3.75 0.7 -43" rotation="0 50 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#c6edf4" position="4 6 -42.75"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="RayTracing">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -45.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -51.5">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 -90 0" position="3 0.4 -51.5">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 0.8 -51.5">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -51.5">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="4 2.4 -46.5">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="4 2.4 -56.5">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 -90 0" position="5 2.4 -51.5">
-              </a-entity>
+            <a-entity id="M1_RayTracing" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -47.5"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_RayTracing" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -47.5"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_raytracing_comparaison" height="2" width="2.5" rotation="-5 -90 0"
+                     position="4 2 -49.5">
+            </a-plane>
+            <a-plane src="#legend_project_raytracing_comparaison" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.9 -49.5">
+            </a-plane>
 
-              <a-plane src="#texture_project_raytracing_comparaison" height="2" width="2.5" rotation="-5 -90 0"
-                       position="4 2 -49.5">
-              </a-plane>
-              <a-plane src="#legend_project_raytracing_comparaison" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.9 -49.5">
-              </a-plane>
-
-              <a-plane src="#texture_project_raytracing_moyen" height="2" width="2.3" rotation="-5 -90 0"
-                       position="4 2 -52.25">
-              </a-plane>
-              <a-plane src="#legend_project_raytracing_moyen" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.9 -52.25">
-              </a-plane>
-              <a-entity mixin="model_m1_raytracing" position="4.62 2 -56.25" rotation="30 -115 -17.8">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#e9edcd" position="4 6 -55.2"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-plane src="#texture_project_raytracing_moyen" height="2" width="2.3" rotation="-5 -90 0"
+                     position="4 2 -52.25">
+            </a-plane>
+            <a-plane src="#legend_project_raytracing_moyen" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 -90 0" position="3.75 0.9 -52.25">
+            </a-plane>
+            <a-entity mixin="model_m1_raytracing" position="4.62 2 -56.25" rotation="30 -115 -17.8">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#e9edcd" position="4 6 -55.2"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
         </a-entity>
 
         <a-entity id="WallLeft">
           <a-entity id="Fusee">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 90 0" position="-3 2.5 -8.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -14">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -14">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -14">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -14">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -9">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -19">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -14">
-              </a-entity>
+            <a-entity id="M1_Fusee" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -10"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_Fusee" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -10"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_fusee_lab" height="2" width="2.2" rotation="-5 90 0" position="-4 2 -12">
+            </a-plane>
+            <a-plane src="#legend_project_fusee_lab" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 -12">
+            </a-plane>
 
-              <a-plane src="#texture_project_fusee_lab" height="2" width="2.2" rotation="-5 90 0" position="-4 2 -12">
-              </a-plane>
-              <a-plane src="#legend_project_fusee_lab" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -12">
-              </a-plane>
+            <a-plane src="#texture_project_fusee_pad" height="2" width="2.2" rotation="-5 90 0" position="-4 2 -15">
+            </a-plane>
+            <a-plane src="#legend_project_fusee_pad" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 -15">
+            </a-plane>
 
-              <a-plane src="#texture_project_fusee_pad" height="2" width="2.2" rotation="-5 90 0" position="-4 2 -15">
-              </a-plane>
-              <a-plane src="#legend_project_fusee_pad" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -15">
-              </a-plane>
-
-              <a-entity mixin="model_m1_fusee" position="-3.75 0.8 -17.5" rotation="0 -120 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#a01f46" position="-4 6 -17.6"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_m1_fusee" position="-3.75 0.8 -17.5" rotation="0 -120 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#a01f46" position="-4 6 -17.6"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="ChattingApp">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -20.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -26.5">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -26.5">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -26.5">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -26.5">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -21.5">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -31.5">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -26.5">
-              </a-entity>
+            <a-entity id="M1_Chat" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -22.5"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_Chat" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -22.5"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_chatting_menu" height="2" width="2" rotation="-5 90 0" position="-4 2 -24.5">
+            </a-plane>
+            <a-plane src="#legend_project_chatting_menu" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 -24.5">
+            </a-plane>
 
-              <a-plane src="#texture_project_chatting_menu" height="2" width="2" rotation="-5 90 0"
-                       position="-4 2 -24.5">
-              </a-plane>
-              <a-plane src="#legend_project_chatting_menu" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -24.5">
-              </a-plane>
+            <a-plane src="#texture_project_chatting_forum" height="2" width="2" rotation="-5 90 0"
+                     position="-4 2 -27.25">
+            </a-plane>
+            <a-plane src="#legend_project_chatting_forum" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 -27.25">
+            </a-plane>
 
-              <a-plane src="#texture_project_chatting_forum" height="2" width="2" rotation="-5 90 0"
-                       position="-4 2 -27.25">
-              </a-plane>
-              <a-plane src="#legend_project_chatting_forum" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 90 0" position="-3.75 0.95 -27.25">
-              </a-plane>
-
-              <a-entity mixin="model_m1_chatting" position="-3.9 2.2 -30" rotation="0 0 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#b1b1b1" position="-4 6 -30.2"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_m1_chatting" position="-3.9 2.2 -30" rotation="0 0 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#b1b1b1" position="-4 6 -30.2"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="Covid">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -32.75">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -39">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -39">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -39">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -39">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -34">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -44">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -39">
-              </a-entity>
+            <a-entity id="M1_Covid" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -35"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_Covid" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -35"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_covid_sain" height="2" width="2" rotation="-5 90 0" position="-4 2 -37">
+            </a-plane>
+            <a-plane src="#legend_project_covid_sain" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 -37">
+            </a-plane>
 
-              <a-plane src="#texture_project_covid_sain" height="2" width="2" rotation="-5 90 0" position="-4 2 -37">
-              </a-plane>
-              <a-plane src="#legend_project_covid_sain" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -37">
-              </a-plane>
+            <a-plane src="#texture_project_covid_atteint" height="2" width="2" rotation="-5 90 0"
+                     position="-4 2 -39.75">
+            </a-plane>
+            <a-plane src="#legend_project_covid_atteint" material="transparent: true; blending: additive" height="0.3"
+                     width="2.6" rotation="0 90 0" position="-3.75 0.95 -39.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_covid_atteint" height="2" width="2" rotation="-5 90 0"
-                       position="-4 2 -39.75">
-              </a-plane>
-              <a-plane src="#legend_project_covid_atteint" material="transparent: true; blending: additive" height="0.3"
-                       width="2.6" rotation="0 90 0" position="-3.75 0.95 -39.75">
-              </a-plane>
-
-              <a-plane src="#texture_project_covid_analyse" height="2" width="2" rotation="-5 90 0"
-                       position="-4 2 -42.5">
-              </a-plane>
-              <a-plane src="#legend_project_covid_analyse" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 -42.5">
-              </a-plane>
-            </a-entity>
+            <a-plane src="#texture_project_covid_analyse" height="2" width="2" rotation="-5 90 0" position="-4 2 -42.5">
+            </a-plane>
+            <a-plane src="#legend_project_covid_analyse" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 -42.5">
+            </a-plane>
           </a-entity>
 
           <a-entity id="MachineDeep_Learning">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -45.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -51.5">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -51.5">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -51.5">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -51.5">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -46.5">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -56.5">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -51.5">
-              </a-entity>
+            <a-entity id="M1_MD_Learning" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -47.5"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="M1_MD_Learning" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -47.5"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -49.5">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 0.9 -49.5" scale="4 4 4"
+                      rotation="0 90 0">
+            </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -49.5">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 0.9 -49.5"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -52.25">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 0.9 -52.25"
+                      scale="4 4 4" rotation="0 90 0">
+            </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -52.25">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 0.9 -52.25"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
-
-              <a-entity mixin="model_m1_cnn" position="-3.75 1.2 -54.75" rotation="0 -10 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ddddd9" position="-3.8 6 -54.8"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_m1_cnn" position="-3.75 1.2 -54.75" rotation="0 -10 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#ddddd9" position="-3.8 6 -54.8"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
         </a-entity>
@@ -1111,6 +931,10 @@
       <!-- L2/L3 -->
 
       <a-entity id="L2 / L3 - projects">
+
+        <a-entity mixin="model_musee_aile_l23" position="0 10 0.2" rotation="0 0 0">
+        </a-entity>
+
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="33.25 0 0" rotation="-90 90 0">
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="33.75 5 0" rotation="90 90 0">
@@ -1186,95 +1010,50 @@
 
         <a-entity id="WallRight">
           <a-entity id="BwarioKart">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" position="8.25 2.5 3" rotation="0 180 0">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" position="14 4.5 3" rotation="0 180 0">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" position="14 0.4 3" rotation="0 180 0">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" position="14 0.8 4" rotation="-90 180 0">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" position="14 4 4" rotation="90 180 0">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 90 0" position="9 2.4 4">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 -90 0" position="19 2.4 4">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 180 0" position="14 2.4 5">
-              </a-entity>
+            <a-entity id="L2_BwarioKart" mixin="interraction_info_bulle" rotation="-20 180 0" position="10 1.5 4"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="L2_BwarioKart" mixin="interraction_info_bulle" rotation="-20 180 0" position="10 1.5 4"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_karting_jeux" height="2" width="2.7" rotation="-5 180 0" position="12 2 4">
+            </a-plane>
+            <a-plane src="#legend_project_karting_jeux" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 180 0" position="12 0.95 3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_karting_jeux" height="2" width="2.7" rotation="-5 180 0" position="12 2 4">
-              </a-plane>
-              <a-plane src="#legend_project_karting_jeux" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 180 0" position="12 0.95 3.75">
-              </a-plane>
+            <a-plane src="#texture_project_karting_arbre" height="2" width="2.7" rotation="-5 180 0" position="15 2 4">
+            </a-plane>
+            <a-plane src="#legend_project_karting_arbre" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 180 0" position="15 0.95 3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_karting_arbre" height="2" width="2.7" rotation="-5 180 0"
-                       position="15 2 4">
-              </a-plane>
-              <a-plane src="#legend_project_karting_arbre" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 180 0" position="15 0.95 3.75">
-              </a-plane>
-
-              <a-entity mixin="model_l2_bwarioKart" position="17.5 0.8 3.75" rotation="0 -110 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#319bf2" position="17.6 6 4"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_l2_bwarioKart" position="17.5 0.8 3.75" rotation="0 -110 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#319bf2" position="17.6 6 4"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="ObjectiveEquilibrium">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" position="20.25 2.5 3" rotation="0 180 0">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" position="26.5 4.5 3" rotation="0 180 0">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" position="26.5 0.4 3" rotation="0 180 0">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" position="26.5 0.8 4" rotation="-90 180 0">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" position="26.5 4 4" rotation="90 180 0">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 90 0" position="21.5 2.4 4">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 -90 0" position="31.5 2.4 4">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 180 0" position="26.5 2.4 5">
-              </a-entity>
+            <a-entity id="L2_ObjectiveEquilibrium" mixin="interraction_info_bulle" rotation="-20 180 0"
+                      position="22.5 1.5 4" class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="L2_ObjectiveEquilibrium" mixin="interraction_info_bulle" rotation="-20 180 0"
-                        position="22.5 1.5 4" class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 180 0" position="24.5 2 4">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 1" position="24.5 0.9 3.75" scale="4 4 4"
+                      rotation="0 180 0">
+            </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 180 0" position="24.5 2 4">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 1" position="24.5 0.9 3.75" scale="4 4 4"
-                        rotation="0 180 0">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 180 0" position="27.25 2 4">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 2" position="27.25 0.9 3.75" scale="4 4 4"
+                      rotation="0 180 0">
+            </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 180 0" position="27.25 2 4">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 2" position="27.25 0.9 3.75"
-                        scale="4 4 4" rotation="0 180 0">
-              </a-entity>
-
-              <a-entity mixin="model_l2_objectiveEquilibrium" position="30 1.6 3.75" rotation="45 10 45">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#b3ef98" position="30.1 6 4"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_l2_objectiveEquilibrium" position="30 1.6 3.75" rotation="45 10 45">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#b3ef98" position="30.1 6 4"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
@@ -1285,191 +1064,103 @@
 
         <a-entity id="WallLeft">
           <a-entity id="NewsAdventure">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 0 0" position="8.25 2.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="14 4.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 0 0" position="14 0.4 -3">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="14 0.8 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 0" position="14 4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 90 0" position="9 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 -90 0" position="19 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 0 0" position="14 2.4 -5">
-              </a-entity>
+            <a-entity id="L3_NewsAdventure" mixin="interraction_info_bulle" rotation="-20 0 0" position="10 1.5 -4"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="L3_NewsAdventure" mixin="interraction_info_bulle" rotation="-20 0 0" position="10 1.5 -4"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_news_homepage" height="2" width="2.7" rotation="-5 0 0" position="12 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_news_homepage" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 0 0" position="12 0.95 -3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_news_homepage" height="2" width="2.7" rotation="-5 0 0" position="12 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_news_homepage" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 0 0" position="12 0.95 -3.75">
-              </a-plane>
+            <a-plane src="#texture_project_news_map" height="2" width="2.7" rotation="-5 0 0" position="15 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_news_map" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 0 0" position="15 0.95 -3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_news_map" height="2" width="2.7" rotation="-5 0 0" position="15 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_news_map" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 0 0" position="15 0.95 -3.75">
-              </a-plane>
-
-              <a-entity mixin="model_l3_newAdventure" position="18.25  0.8 -3.75" rotation="0 90 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffb7b9" position="17.7 6 -4"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_l3_newAdventure" position="18.25  0.8 -3.75" rotation="0 90 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffb7b9" position="17.7 6 -4"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="Question">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="20.25 2.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="26.5 4.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 0 0" position="26.5 0.4 -3">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="26.5 0.8 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 0" position="26.5 4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 90 0" position="21.5 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 -90 0" position="31.5 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 0 0" position="26.5 2.4 -5">
-              </a-entity>
+            <a-entity id="L3_Question" mixin="interraction_info_bulle" rotation="-20 0 0" position="22.5 1.5 -4"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="L3_Question" mixin="interraction_info_bulle" rotation="-20 0 0" position="22.5 1.5 -4"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_question_liste" height="2" width="3.5" rotation="-5 0 0"
+                     position="24.9 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_question_liste" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 0 0" position="24.9 0.9 -3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_question_liste" height="2" width="3.5" rotation="-5 0 0"
-                       position="24.9 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_question_liste" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 0 0" position="24.9 0.9 -3.75">
-              </a-plane>
+            <a-plane src="#texture_project_question_reponse" material="transparent: true" height="2" width="2"
+                     rotation="-5 0 0" position="28 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_question_reponse" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 0 0" position="28 0.9 -3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_question_reponse" material="transparent: true" height="2" width="2"
-                       rotation="-5 0 0" position="28 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_question_reponse" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 0 0" position="28 0.9 -3.75">
-              </a-plane>
-
-              <a-entity mixin="model_l3_question" position="30.1 2.4 -3.88" rotation="0 -30 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#f1d18f" position="30 6 -4"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_l3_question" position="30.1 2.4 -3.88" rotation="0 -30 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#f1d18f" position="30 6 -4"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="Graphs">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="32.75 2.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="39 4.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 0 0" position="39 0.4 -3">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="39 0.8 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 0" position="39 4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 90 0" position="34 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 -90 0" position="44 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 0 0" position="39 2.4 -5">
-              </a-entity>
+            <a-entity id="L3_Graphs" mixin="interraction_info_bulle" rotation="-20 0 0" position="35 1.5 -4"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="L3_Graphs" mixin="interraction_info_bulle" rotation="-20 0 0" position="35 1.5 -4"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_graph_graph" height="2" width="2" rotation="-5 0 0" position="37 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_graph_graph" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 0 0" position="37 0.95 -3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_graph_graph" height="2" width="2" rotation="-5 0 0" position="37 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_graph_graph" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 0 0" position="37 0.95 -3.75">
-              </a-plane>
+            <a-plane src="#texture_project_graph_analyse" height="2" width="2.6" rotation="-5 0 0" position="40 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_graph_analyse" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 0 0" position="40 0.95 -3.75">
+            </a-plane>
 
-              <a-plane src="#texture_project_graph_analyse" height="2" width="2.6" rotation="-5 0 0" position="40 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_graph_analyse" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 0 0" position="40 0.95 -3.75">
-              </a-plane>
-
-              <a-entity mixin="model_l3_graphs" position="42.5 1.9 -3.75" rotation="0 30 30">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffffff" position="42.5 6 -4"
-                        rotation="-90 0 0">
-              </a-entity>
+            <a-entity mixin="model_l3_graphs" position="42.5 1.9 -3.75" rotation="0 30 30">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffffff" position="42.5 6 -4"
+                      rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
           <a-entity id="Garage">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="45.25 2.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="51.5 4.5 -3">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 0 0" position="51.5 0.4 -3">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="51.5 0.8 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 0" position="51.5 4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 90 0" position="46.5 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 -90 0" position="56.5 2.4 -4">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 0 0" position="51.5 2.4 -5">
-              </a-entity>
+            <a-entity id="L3_Garage" mixin="interraction_info_bulle" rotation="-20 0 0" position="47.5 1.5 -4"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="L3_Garage" mixin="interraction_info_bulle" rotation="-20 0 0" position="47.5 1.5 -4"
-                        class="raycastable menu-button clickable">
-              </a-entity>
-
-              <a-plane src="#texture_project_garage_multi" material="transparent: true" height="2" width="2.5"
-                       rotation="-5 0 0" position="49.5 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_garage_multi" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 0 0" position="49.5 0.95 -3.75">
-              </a-plane>
+            <a-plane src="#texture_project_garage_multi" material="transparent: true" height="2" width="2.5"
+                     rotation="-5 0 0" position="49.5 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_garage_multi" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 0 0" position="49.5 0.95 -3.75">
+            </a-plane>
 
 
-              <a-plane src="#texture_project_garage_utilisateur" height="2" width="3" rotation="-5 0 0"
-                       position="52.6 2 -4">
-              </a-plane>
-              <a-plane src="#legend_project_garage_utilisateur" material="transparent: true; blending: additive"
-                       height="0.3" width="2.8" rotation="0 0 0" position="52.6 0.95 -3.75">
-              </a-plane>
+            <a-plane src="#texture_project_garage_utilisateur" height="2" width="3" rotation="-5 0 0"
+                     position="52.6 2 -4">
+            </a-plane>
+            <a-plane src="#legend_project_garage_utilisateur" material="transparent: true; blending: additive"
+                     height="0.3" width="2.8" rotation="0 0 0" position="52.6 0.95 -3.75">
+            </a-plane>
 
-              <a-entity mixin="model_l3_garage" position="55 0.7 -3.75" rotation="0 0 0">
-              </a-entity>
-              <a-entity class="high" mixin="model_light_spot_objects" light="color:#adac92" position="55 6 -3.5"
-                        rotation="-78 0 0">
-              </a-entity>
+            <a-entity mixin="model_l3_garage" position="55 0.7 -3.75" rotation="0 0 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#adac92" position="55 6 -3.5"
+                      rotation="-78 0 0">
             </a-entity>
           </a-entity>
         </a-entity>
@@ -1520,6 +1211,10 @@
       <!-- Other projects -->
 
       <a-entity id="Others - projects">
+
+        <a-entity mixin="model_musee_aile_autre" position="10 0 0.2" rotation="0 0 0">
+        </a-entity>
+
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 33.25" rotation="-90 0 0">
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 33.75" rotation="90 0 0">
@@ -1563,95 +1258,51 @@
 
         <a-entity id="WallRight">
           <a-entity id="ThisProject">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 90 0" position="-3 2.5 8.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 14">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 14">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 14">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 14">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 9">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 19">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 14">
-              </a-entity>
+            <a-entity id="Other_This" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 10"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="Other_This" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 10"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_project_musee_aframe" height="2" width="2.6" rotation="-5 90 0" position="-4 2 12">
+            </a-plane>
+            <a-plane src="#legend_project_musee_aframe" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 12">
+            </a-plane>
 
-              <a-plane src="#texture_project_musee_aframe" height="2" width="2.6" rotation="-5 90 0" position="-4 2 12">
-              </a-plane>
-              <a-plane src="#legend_project_musee_aframe" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 12">
-              </a-plane>
-
-              <a-plane src="#texture_project_musee_musee" height="2" width="2.3" rotation="-5 90 0" position="-4 2 15">
-              </a-plane>
-              <a-plane src="#legend_project_musee_musee" material="transparent: true; blending: additive" height="0.3"
-                       width="2.8" rotation="0 90 0" position="-3.75 0.95 15">
-              </a-plane>
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 17.5">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Mus&#xE9;e en 3D" position="-3.75 0.9 17.5"
-                        scale="4 4 4" rotation="0 90 0">
-              </a-entity>
+            <a-plane src="#texture_project_musee_musee" height="2" width="2.3" rotation="-5 90 0" position="-4 2 15">
+            </a-plane>
+            <a-plane src="#legend_project_musee_musee" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 90 0" position="-3.75 0.95 15">
+            </a-plane>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 17.5">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Mus&#xE9;e en 3D" position="-3.75 0.9 17.5" scale="4 4 4"
+                      rotation="0 90 0">
             </a-entity>
           </a-entity>
         </a-entity>
 
         <a-entity id="WallLeft">
           <a-entity id="Dimension">
-            <a-entity id="architecture">
-              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 8.25">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 14">
-              </a-entity>
-              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 -90 0" position="3 0.4 14">
-              </a-entity>
-
-              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 0.8 14">
-              </a-entity>
-              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 14">
-              </a-entity>
-              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="4 2.4 9">
-              </a-entity>
-              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="4 2.4 19">
-              </a-entity>
-              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 -90 0" position="5 2.4 14">
-              </a-entity>
+            <a-entity id="Other_Dimension" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 10"
+                      class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-entity id="presentation">
-              <a-entity id="Other_Dimension" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 10"
-                        class="raycastable menu-button clickable">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 12">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 1" position="3.75 0.9 12" scale="4 4 4"
+                      rotation="0 -90 0">
+            </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 12">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 1" position="3.75 0.9 12" scale="4 4 4"
-                        rotation="0 -90 0">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 14.75">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 2" position="3.75 0.9 14.75" scale="4 4 4"
+                      rotation="0 -90 0">
+            </a-entity>
 
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 14.75">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 2" position="3.75 0.9 14.75"
-                        scale="4 4 4" rotation="0 -90 0">
-              </a-entity>
-
-              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 17.5">
-              </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 3" position="3.75 0.9 17.5" scale="4 4 4"
-                        rotation="0 -90 0">
-              </a-entity>
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 -90 0" position="4 2 17.5">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 3" position="3.75 0.9 17.5" scale="4 4 4"
+                      rotation="0 -90 0">
             </a-entity>
           </a-entity>
         </a-entity>

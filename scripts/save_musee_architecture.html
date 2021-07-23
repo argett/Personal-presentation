@@ -1,3 +1,104 @@
+<img id="texture_hall_ground" src="assets/img/hall-ground.jpg" />
+<img id="texture_hall_beam" src="assets/img/hall-beam.jpg" />
+<img id="texture_hall_ceiling" src="assets/img/hall-ceiling.jpg" />
+<img id="texture_hall_hidden" src="assets/img/hall-hidden.jpg" />
+<img id="texture_wall" src="assets/img/wall.jpg" />
+<img id="texture_wip" src="assets/img/wip.jpg" />
+
+
+<!--    Hall assets     -->
+<a-mixin id="hall_ground" geometry="primitive: plane;" material="src: #texture_hall_ground; repeat: 3 4">
+</a-mixin>
+<a-mixin id="hall_ceiling" geometry="primitive: plane;" material="src: #texture_hall_ceiling; repeat: 6 6">
+</a-mixin>
+<a-mixin id="hall_wall" geometry="primitive: plane;" material="src: #texture_wall; repeat: 2 2">
+</a-mixin>
+<a-mixin id="hall_beam" geometry="primitive: plane;" material="src: #texture_hall_beam; repeat: 8 1">
+</a-mixin>
+<a-mixin id="hall_hidden" geometry="primitive: plane;" material="src: #texture_hall_hidden; repeat: 10 1">
+</a-mixin>
+
+
+
+<!--    Corridor's recess assets    -->
+<a-mixin id="recess_ext_hall" geometry="primitive: plane;" material="src: #texture_wall; repeat: 0.7 2">
+</a-mixin>
+<a-mixin id="recess_ext_inter" geometry="primitive: plane;" material="src: #texture_wall; repeat: 1 2">
+</a-mixin>
+<a-mixin id="recess_ext_middle" geometry="primitive: plane;" material="src: #texture_wall; repeat: 4 0.3">
+</a-mixin>
+<a-mixin id="recess_int_down" geometry="primitive: plane;" material="src: #texture_recess_floor; repeat: 6 2">
+</a-mixin>
+<a-mixin id="recess_int_up" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 2.25 1">
+</a-mixin>
+<a-mixin id="recess_int_right" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 0.5 1">
+</a-mixin>
+<a-mixin id="recess_int_left" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 0.5 1">
+</a-mixin>
+<a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 2.25 1">
+</a-mixin>
+
+
+
+<!--    Corridor's assets     -->
+<a-mixin id="corridor_ground" geometry="primitive: plane;" material="src: #texture_corridor_ground; repeat: 2 10">
+</a-mixin>
+<a-mixin id="corridor_ceiling" geometry="primitive: plane;" material="src: #texture_hall_ceiling; repeat: 3 23">
+</a-mixin>
+
+
+
+<!-- id="Hall"-->
+<a-entity mixin="hall_ground" scale="15 15 1" position="0 0 0" rotation="-90 0 0">
+</a-entity>
+<a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
+</a-entity>
+<!-- id="North"-->
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="-5.25 2.5 -7.5" rotation="0 0 0">
+</a-entity>
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="5.25 2.5 -7.5" rotation="0 0 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="0 5.5 -7.5" rotation="0 0 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="0 5 -8" rotation="90 0 0">
+</a-entity>
+<a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 -8.5" rotation="0 0 0">
+</a-entity>
+<!--id="East"-->
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="7.5 2.5 -5.25" rotation="0 -90 0">
+</a-entity>
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="7.5 2.5 5.25" rotation="0 -90 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="7.5 5.5 0" rotation="0 -90 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="8 5 0" rotation="90 0 90">
+</a-entity>
+<a-entity mixin="hall_hidden" scale="17 2 1" position="8.5 6 0" rotation="0 -90 0">
+</a-entity>
+<!-- id="West" -->
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="-7.5 2.5 5.25" rotation="0 90 0">
+</a-entity>
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="-7.5 2.5 -5.25" rotation="0 90 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="-7.5 5.5 0" rotation="0 90 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="-8 5 0" rotation="90 180 90">
+</a-entity>
+<a-entity mixin="hall_hidden" scale="17 2 1" position="-8.5 6 0" rotation="0 90 0">
+</a-entity>
+<!-- "South"-->
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="5.25 2.5 7.5" rotation="0 180 0">
+</a-entity>
+<a-entity mixin="hall_wall" scale="4.5 5 1" position="-5.25 2.5 7.5" rotation="0 180 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="0 5.5 7.5" rotation="0 180 0">
+</a-entity>
+<a-entity mixin="hall_beam" scale="15 1 1" position="0 5 8" rotation="90 180 0">
+</a-entity>
+<a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 8.5" rotation="0 180 0">
+</a-entity>
+
+
 <!-- id="PA8"-->
 <a-entity id="architecture">
     <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 -8.25">

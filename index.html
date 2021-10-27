@@ -126,6 +126,11 @@
       <img id="legend_project_raytracing_comparaison" src="assets/img/projets/m1/projet_raytracing_comparaison.png" />
       <img id="legend_project_raytracing_moyen" src="assets/img/projets/m1/projet_raytracing_moyen.png" />
 
+      <img id="texture_project_mldl_chiffres" src="assets/img/projets/m1/projet_mldl_chiffres.jpg" />
+      <img id="texture_project_mldl_classification" src="assets/img/projets/m1/projet_mldl_classification.jpg" />
+      <img id="legend_project_mldl_chiffres" src="assets/img/projets/m1/projet_mldl_chiffres.png" />
+      <img id="legend_project_mldl_classification" src="assets/img/projets/m1/projet_mldl_classification.png" />
+
       <!-- projects images L3 -->
       <img id="texture_project_news_homepage" src="assets/img/projets/l3/projet_news_homepage.jpg" />
       <img id="texture_project_news_map" src="assets/img/projets/l3/projet_news_map.jpg" />
@@ -809,17 +814,17 @@
                       class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -49.5">
+            <a-plane src="#texture_project_mldl_chiffres" height="2.2" width="2.2" rotation="-5 90 0" position="-4 2 -49.5">
             </a-plane>
-            <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 0.9 -49.5" scale="4 4 4"
-                      rotation="0 90 0">
-            </a-entity>
+            <a-plane src="#legend_project_mldl_chiffres" src="#legend_project_covid_analyse" material="transparent: true; blending: additive" height="0.3"
+                      width="2.8" rotation="0 90 0" position="-3.75 0.9 -49.5">
+            </a-plane>
 
-            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 90 0" position="-4 2 -52.25">
+            <a-plane src="#texture_project_mldl_classification" height="2.4" width="2.4" rotation="-5 90 0" position="-4 2 -52.5">
             </a-plane>
-            <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 0.9 -52.25"
-                      scale="4 4 4" rotation="0 90 0">
-            </a-entity>
+            <a-plane src="#legend_project_mldl_classification" src="#legend_project_covid_analyse" material="transparent: true; blending: additive" height="0.3"
+                      width="2.8" rotation="0 90 0" position="-3.75 0.9 -52.5">
+            </a-plane>
 
             <a-entity mixin="model_m1_cnn" position="-3.75 1.2 -54.75" rotation="0 -10 0">
             </a-entity>
@@ -940,13 +945,13 @@
             <a-plane src="#texture_project_objectiveEquilibrium_jeux" height="2" width="2.2" rotation="-5 180 0" position="24.5 2 4">
             </a-plane>
             <a-plane src="#legend_project_objectiveEquilibrium_jeux" material="transparent: true; blending: additive" height="0.3" 
-                      width="2.8" rotation="0 180 0" position="24.5 0.9 3.75">
+                      width="2.8" rotation="0 180 0" position="24.5 0.95 3.75">
             </a-plane>
 
             <a-plane src="#texture_project_objectiveEquilibrium_carte" height="2" width="2.4" rotation="-5 180 0" position="27.5 2 4">
             </a-plane>
             <a-plane src="#legend_project_objectiveEquilibrium_carte" material="transparent: true; blending: additive" height="0.3"
-                      width="2.8" rotation="0 180 0" position="27.25 0.9 3.75">
+                      width="2.8" rotation="0 180 0" position="27.25 0.95 3.75">
             </a-plane>
 
             <a-entity mixin="model_l2_objectiveEquilibrium" position="30 1.6 3.75" rotation="45 10 45">

@@ -2,8 +2,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lilian's projects</title>
-  <meta name="description" content="Portfolio des projets de Lilian • A-Frame">
+  <title>Les projets de Lilian</title>
+  <meta name="description" content="Portfolio de Lilian • A-Frame">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="style.css" />
 
@@ -75,7 +75,7 @@
   </div>
 
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse;" raycaster="objects: .raycastable"
-           webxr="referenceSpaceType: local-floor" background="color: black" stats>
+           webxr="referenceSpaceType: local-floor" background="color: black" > <!-- stats -->
     <a-assets timeout="5000">
 
       <img id="texture_spawn_ground" src="assets/img/spawn.jpg" />
@@ -153,6 +153,11 @@
       <img id="texture_project_karting_arbre" src="assets/img/projets/l2/projet_karting_amelioration.jpg" />
       <img id="legend_project_karting_jeux" src="assets/img/projets/l2/projet_karting_jeux.png" />
       <img id="legend_project_karting_arbre" src="assets/img/projets/l2/projet_karting_amelioration.png" />
+      
+      <img id="texture_project_objectiveEquilibrium_jeux" src="assets/img/projets/l2/projet_transverse_jeux.jpg" />
+      <img id="texture_project_objectiveEquilibrium_carte" src="assets/img/projets/l2/projet_transverse_carte.jpg" />
+      <img id="legend_project_objectiveEquilibrium_jeux" src="assets/img/projets/l2/projet_transverse_jeux.png" />
+      <img id="legend_project_objectiveEquilibrium_carte" src="assets/img/projets/l2/projet_transverse_carte.png" />
 
       <!-- projects images autre -->
       <img id="legend_project_autre" src="assets/img/projets/autre/titreautre.png" />
@@ -932,16 +937,16 @@
                       position="22.5 1.5 4" class="raycastable menu-button clickable">
             </a-entity>
 
-            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 180 0" position="24.5 2 4">
+            <a-plane src="#texture_project_objectiveEquilibrium_jeux" height="2" width="2" rotation="-5 180 0" position="24.5 2 4">
             </a-plane>
-            <a-entity text="align: center; color: white; value:Legende image 1" position="24.5 0.9 3.75" scale="4 4 4"
-                      rotation="0 180 0">
+            <a-entity src="legend_project_objectiveEquilibrium_jeux" material="transparent: true; blending: additive" height="0.3" 
+                      width="2.8" rotation="0 180 0" position="24.5 0.9 3.75">
             </a-entity>
 
-            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-5 180 0" position="27.25 2 4">
+            <a-plane src="#texture_project_objectiveEquilibrium_carte" height="2" width="2" rotation="-5 180 0" position="27.25 2 4">
             </a-plane>
-            <a-entity text="align: center; color: white; value:Legende image 2" position="27.25 0.9 3.75" scale="4 4 4"
-                      rotation="0 180 0">
+            <a-entity src="legend_project_objectiveEquilibrium_carte" material="transparent: true; blending: additive" height="0.3"
+                      width="2.8" rotation="0 180 0" position="27.25 0.9 3.75">
             </a-entity>
 
             <a-entity mixin="model_l2_objectiveEquilibrium" position="30 1.6 3.75" rotation="45 10 45">

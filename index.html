@@ -48,6 +48,9 @@
       <div id="title" class="title">Les projets de Lilian Favre Garcia</div>
 
       <div id="instructions" class="instructions">
+
+         <!-- TODO : mettre une barre de scroll -->
+
         <div id="pc"><strong>Pc</strong>: Clavier (flèches directionnelles / zqsd) et souris</div>
         <div id="mobile"><strong>Mobile</strong>: visez les cibles au sol</div>
         <div id="projectDescription"></div>
@@ -83,8 +86,13 @@
       <img id="texture_interraction_info" src="assets/img/info.jpg" />
       <img id="texture_interraction_wip" src="assets/img/imgAvenir.jpg" />
 
-      <!-- projects images autre -->
+      <!-- projects images M2 -->
       <img id="legend_project_m2" src="assets/img/projets/m2/titrem2.png" />
+
+      <img id="texture_project_tracto_complet" src="assets/img/projets/m2/tracto_complet.jpg" />
+      <img id="texture_project_tracto_masque" src="assets/img/projets/m2/tracto_masque.jpg" />
+      <img id="legend_project_tracto_complet" src="assets/img/projets/m2/tracto_complet.png" />
+      <img id="legend_project_tracto_masque" src="assets/img/projets/m2/tracto_masque.png" />
 
       <!-- projects images M1 -->
       <img id="legend_project_m1" src="assets/img/projets/m1/titrem1.png" />
@@ -184,6 +192,9 @@
       <!-- basics -->
 
       <a-asset-item id="hall" src="assets/obj/museum/hall.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
+      </a-asset-item>
+      <a-asset-item id="aile_m2" src="assets/obj/museum/aileM1.gltf" res ponse-type="arraybuffer"
+                    crossorigin="anonymous">
       </a-asset-item>
       <a-asset-item id="aile_m1" src="assets/obj/museum/aileM1.gltf" res ponse-type="arraybuffer"
                     crossorigin="anonymous">
@@ -350,6 +361,8 @@
 
     <!--    3D Models    -->
     <a-mixin id="model_musee_hall" gltf-model="#hall" scale="1 1 1">
+    </a-mixin>
+    <a-mixin id="model_musee_aile_m2" gltf-model="#aile_m2" scale="1 1 1">
     </a-mixin>
     <a-mixin id="model_musee_aile_m1" gltf-model="#aile_m1" scale="1 1 1">
     </a-mixin>
@@ -541,6 +554,133 @@
         </a-entity>
       </a-entity>
 
+      <!-- M2 -->
+
+      <a-entity id=" M2 - projects">
+        <a-entity mixin="model_musee_aile_m1" position="-7.5 0 0" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity id="Teleport_pads">
+          <a-entity id="Teleport_wall_right">
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -11.5" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -16" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -24" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -28" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -36.5" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -40.5" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -49" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="1.75 0.01 -54" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+          </a-entity>
+
+          <a-entity id="Teleport_wall_left">
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -11.5" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -16" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -24" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -28" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -36.5" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -40.5" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -49" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_second" position="-1.75 0.01 -54" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+          </a-entity>
+
+          <a-entity id="Teleport_middle">
+            <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -20.25" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -32.75" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+            <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -45.25" rotation="-90 0 0"
+                      class="raycastable phone clickable">
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
+        
+        <a-entity id="WallRight">
+
+          <a-entity id="Tractogramme">
+            <a-entity id="M2_Tracto" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
+                      class="raycastable menu-button clickable">
+            </a-entity>
+
+            <a-plane src="#texture_project_tracto_complet" height="2" width="2.6" rotation="-5 -90 0" position="4 2 -12">
+            </a-plane>
+            <a-plane src="#legend_project_tracto_complet" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 -90 0" position="3.75 0.95 -12">
+            </a-plane>
+
+            <a-plane src="#texture_project_tracto_masque" height="2" width="2.4" rotation="-5 -90 0"
+                     position="4 2 -15">
+            </a-plane>
+            <a-plane src="#legend_project_tracto_masque" material="transparent: true; blending: additive" height="0.3"
+                     width="2.8" rotation="0 -90 0" position="3.75 0.95 -15">
+            </a-plane>
+
+            <a-entity mixin="model_m1_pa8" position="3.75 0.8 -17.5" rotation="0 -30 0">
+            </a-entity>
+            <a-entity class="high" mixin="model_light_spot_objects" light="color:#ffcccc" position="4 6 -17.8"
+                      rotation="-90 0 0">
+            </a-entity>
+          </a-entity>
+
+          <a-entity id="Projet">
+          </a-entity>
+
+          <a-entity id="Projet_v2">
+          </a-entity>
+
+          <a-entity id="Projet_v3">
+          </a-entity>
+        </a-entity>
+
+        <a-entity id="WallLeft">
+          <a-entity id="Projet_v4">
+          </a-entity>
+
+          <a-entity id="Projet_v5">
+          </a-entity>
+
+          <a-entity id="Projet_v6">
+          </a-entity>
+
+          <a-entity id="projet_v7">
+          </a-entity>
+        </a-entity>
+
+      </a-entity>
 
       <!-- M1 -->
 
@@ -1064,12 +1204,6 @@
             </a-entity>
           </a-entity>
         </a-entity>
-      </a-entity>
-
-      <!-- M2 -->
-
-      <a-entity id=" M2 - projects">
-
       </a-entity>
 
       <!-- Other projects -->

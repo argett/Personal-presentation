@@ -1,6 +1,11 @@
 'use strict'
 
 var projectsInfo = {
+  M2_Tracto: {
+    title: 'Tractogramme neuronal',
+    description: "Ce projet réalisé dans la matière \"Reconstruction et analyse en Imagerie Médicale\" consiste en la création, à partir d'une IRM de diffusion, de ce que l'on appelle un Tractogramme. C'est un modèle qui tente de représenter au mieux les fibres neuronales cérébrales pour ainsi observer quelles sont les régions du cerveaux qui sont connectées et comment. Ce projet à été réalisé entièrement en Python et seul. Ce modèle est déterministe et représente ce qu'il se faisait dans l'état de l'art dans les années 2010."
+
+  },
   M1_Pa8: {
     title: 'Projet à 8',
     description: "Ce projet à 8 qui s'est déroulé sur 1 an et dont j'avais pour rôle chef de projet a consisté innover ou améliorer une chose existante. Nous avons choisi de developper un site pour animaux en language Elm. Notre but était de créer un site réunissant plusieurs fonctionnalités existantes sur d'autres sites mais en les centralisant sur le nôtre, tout en créant un site plus facile d'utilisation et avec une meilleur expérience utilisateur générale. En plus du rôle de chef de projet, j'avais pour rôle celui de développeur. Tout au long de notre projet, nous avons utilisé la mathode de management AGILE. Vous trouverez sur le repo Gitlab toutes les informations sur ce projet, et notemment le backlog. Pour accéder au repo, il suffit de cliquer sur l'icône de Gitlab en haut à droite du site. <br><p style='text-align: center;'>Le site est disponible <a href='https://petopia-app.netlify.app/fr' style='color: rgb(0, 200, 200);'>ici</a> (site non fini)</p>"

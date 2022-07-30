@@ -5,6 +5,34 @@ var projectsInfo = {
     title: 'Tractogramme neuronal',
     description: "Ce projet réalisé dans la matière 'Reconstruction et analyse en Imagerie Médicale' consiste en la création, à partir d'une IRM de diffusion, de ce que l'on appelle un Tractogramme. C'est un modèle qui tente de représenter au mieux les fibres neuronales cérébrales pour ainsi observer quelles sont les régions du cerveaux qui sont connectées et comment. Ce projet à été réalisé entièrement en Python et seul. Ce modèle est déterministe et représente ce qu'il se faisait dans l'état de l'art dans les années 2010."
   },
+  M2_Cluster: {
+    title: 'Analyse et création de clusters',
+    description: "Ce projet développé en Python et en binôme avait pour but de réaliser des algorithme de clustering, soit en machine learning, soit avec d'autres méthodes du type Kmeans, DBScan, etc. Après avoir réalisé des tests sur des fausses données avec une visualisation directe, nous avons appliqué ces algorithmes sur des données de boursières. Ces données sont des les valeurs d'indices boursiers entre 2001 et 2018, et le but était de déterminer quelle algorithme pemettait une bonne analyse des données dans le but de trouver des moments de hausse ou de chutte exceptionnels."
+  },
+  M2_Caustiques: {
+    title: 'Calcul de caustiques en raytracing',
+    description: "Réalisé seul et en C++, le but était d'implémenter un calcul de caustiques en raytracing. Les caustiques sont présentes lorsqu'il y a une concentration de photons à un endroit particulier s'il y a une réflection ou de la réfraction (sur le sol d'une piscine avec les vagues de l'eau par exemple). Le projet n'avait pas vocation à fonctionner en temps réel mais uniquement à réaliser un rendu photo-réaliste."
+  },
+  M2_PacMan: {
+    title: 'Apprentissage par renforcement',
+    description: "Cette suite de laboratoires réalisé seul et en Python, devait nous montrer comment programmer l'IA de PacMan en utilisant différents algorithmes (Alpha-Beta Prunning, par Renforcement, Value Iteration...). Le support du jeu / la programmation était donnée par le professeur et notre but était donc d'implémenter différentes modèles d'intelligences artificielles pour les comparere ensuite."
+  },
+  M2_Feuille: {
+    title: 'Machine Learning',
+    description: "Dans le cadre du cours 'Techniques d'Aprentissage', nous avons eu pour projet en binôme de fin de semestre d'implémenter 6 différentes modèles de machine learning en Python et de les appliquer sur un dataset de notre choix. J'ai donc choisi un dataset sur Kaggle qui comportait des données sur des feuilles (taille, texture, poids, couleur...) ainsi que leur espèce (arbre, arbre de fleurs, arbre de fruits...). Les différents modèles implémentés ont été KNN, Random Forest, Decision Tree, AdaBoost, Gradient Boosting et NuSVC. J'ai également dû réaliser le pré-traitement des données (élimination des variables non significatives, normalisation, etc...).  <br><p style='text-align: center;'>Le projet est disponible <a href='https://github.com/argett/Techniques_Aprentissage_Project' style='color: rgb(0, 200, 200);'>ici</a> (site non fini)</p>"
+  },
+  M2_Planetes: {
+    title: 'Système animé et rendu en temps réel',
+    description: "Ce projet réalisé en binôme avait deux buts différents : 1) réaliser un système physique en c++ et 2) réaliser le rendu de zéro, c'est à dire de coder en OpenGL. Je me suis occupé de réaliser le système physique en choisissant un support basé sur la gravitation et l'attraction des corps. Le système est composé donc de planètes qui bougent grâce à l'attraction gravitationnelles, mais également d'une soucoupe volante (modélisée par moi-même) qui suis un chemin pré-défini qui utilise de l'interpolation de coordonnées et autres trajectoires B-splines"
+  },
+  M2_MassesRessort: {
+    title: 'Réseau de masses et ressorts',
+    description: "Ce projet développé en C++ et en binôme avait pour but d'implémenter un système physique de masse-ressort, c'est à dire un système pouvant être soumis à des forces (vent, collisions...). Nous avons implémenté un drapeau muni de masses légères puis une balle avec des masses plus lourdes. J'ai choisi d'implémenter le système de collision en plus de réseau de masse-ressort pour aller plus loin. Sur la seconde capture d'écran, on peut voir en des points bleu qui représentent des points de collisions possible entre le balle et le drapeau, évidemment l'algorithme continue après cette étape pour calculer uniquement les vraies positions. "
+  },
+  M2_Cognitive: {
+    title: 'Informatique cognitive',
+    description: "Réalisé en binôme et en language Common Lisp et Python et dans la matière 'Informatique Cognitive', le but était d'implémenter ce que l'on peut appeler une 'IA' mais dont son comportemment doit ressembler au maximum au comportement humain, autant du point de vue physique (temps de réaction, passage de l'information des les différentes partiees du cerveau humain donc mémoire, yeux, mouvement des bras, système de décision) que du point de vue de l'apprentissage (considérant qu'une être humain apprend de ses erreurs). Le projet se base donc sur un contexte où un être humain (notre modèle) est sur une autoroute à 3 voies simplifiée et où il y à un véhicule devant qui freine subitement. L'objectif étant au modèle d'apprendre à bien réagir en terme de temps de raction et de décision (freinage, se déporter).
+  },
   M1_Pa8: {
     title: 'Projet à 8',
     description: "Ce projet à 8 qui s'est déroulé sur 1 an et dont j'avais pour rôle chef de projet a consisté innover ou améliorer une chose existante. Nous avons choisi de developper un site pour animaux en language Elm. Notre but était de créer un site réunissant plusieurs fonctionnalités existantes sur d'autres sites mais en les centralisant sur le nôtre, tout en créant un site plus facile d'utilisation et avec une meilleur expérience utilisateur générale. En plus du rôle de chef de projet, j'avais pour rôle celui de développeur. Tout au long de notre projet, nous avons utilisé la mathode de management AGILE. Vous trouverez sur le repo Gitlab toutes les informations sur ce projet, et notemment le backlog. Pour accéder au repo, il suffit de cliquer sur l'icône de Gitlab en haut à droite du site. <br><p style='text-align: center;'>Le site est disponible <a href='https://petopia-app.netlify.app/fr' style='color: rgb(0, 200, 200);'>ici</a> (site non fini)</p>"

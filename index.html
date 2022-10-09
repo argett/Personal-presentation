@@ -439,7 +439,7 @@
     <a-mixin id="model_wall_lamp" gltf-model="#lamp" scale="0.025 0.025 0.025">
     </a-mixin>
 
-    <a-mixin id="model_m2_soucoupe" gltf-model="#m2_planet" scale="1 1 1">
+    <a-mixin id="model_m2_soucoupe" gltf-model="#m2_planet" scale="0.2 0.2 0.2">
     </a-mixin>
 
     <a-mixin id="model_m1_pa8" gltf-model="#m1_pa8" scale="0.1 0.1 0.1">
@@ -605,6 +605,9 @@
 
       <a-entity id=" M2 - projects">
         <a-entity mixin="model_musee_aile_m1" position="-7.5 0 0" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity class="high" mixin="model_light_spot_objects" position="-30 4.6 4" rotation="-90 0 0">
         </a-entity>
 
         <a-entity id="Teleport_pads">
@@ -808,7 +811,7 @@
             <a-plane src="#legend_project_planetes_cartoon" material="transparent: true; blending: additive" height="0.3"
                      width="2.8" rotation="0 180 0" position="-27.5 0.95 3.75">
             </a-plane>
-            <a-entity mixin="model_m2_soucoupe" position="-30 1.5 4" rotation="0 -120 0">
+            <a-entity mixin="model_m2_soucoupe" position="-30 2 4" rotation="-6 -121 15">
             </a-entity>
           </a-entity>
 

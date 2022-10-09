@@ -27,7 +27,7 @@ var projectsInfo = {
   },
   M2_MassesRessort: {
     title: 'Réseau de masses et ressorts',
-    description: "Ce projet développé en C++ et en binôme avait pour but d'implémenter un système physique de masse-ressort, c'est à dire un système pouvant être soumis à des forces (vent, collisions...). Nous avons implémenté un drapeau muni de masses légères puis une balle avec des masses plus lourdes. J'ai choisi d'implémenter le système de collision en plus de réseau de masse-ressort pour aller plus loin. Sur la seconde capture d'écran, on peut voir en des points bleu qui représentent des points de collisions possible entre le balle et le drapeau, évidemment l'algorithme continue après cette étape pour calculer uniquement les vraies positions. "
+    description: "Ce projet développé en C++ et en binôme avait pour but d'implémenter un système physique de masse-ressort, c'est à dire un système pouvant être soumis à des forces (vent, collisions...). Nous avons implémenté un drapeau muni de masses légères puis une balle avec des masses plus lourdes. J'ai choisi d'implémenter le système de collision en plus de réseau de masse-ressort pour aller plus loin. Sur la seconde capture d'écran, on peut voir en des points bleu qui représentent des points de collisions possible entre le balle et le drapeau, l'algorithme continue après cette étape pour calculer uniquement les vraies positions. "
   },
   M2_Cognitive: {
     title: 'Informatique cognitive',
@@ -51,7 +51,7 @@ var projectsInfo = {
   },
   M1_Fusee: {
     title: 'Construction et lancement de fusée ',
-    description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste à créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée personnalisée avec des composants pré-crées. Le joueur a donc à sa disposition plusieurs coiffes, réservoires de carburant et moteurs pour faire son choix. Il a également la possibilité de rajouter jusqu'à deux étages supplémentaires. Dans un second temps, le joueur doit faire décoller, si bien construite, sa fusée. Le but étant de la faire décoller et aller le plus haut possible. Nous avons rajouté quelques interractions supplémentaires afin de rendre le serious game plus vivant et interractif pour le joueur."
+    description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Il consiste à créer dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée personnalisée avec des composants pré-crées. Le joueur a donc à sa disposition plusieurs coiffes, réservoirs de carburant et moteurs pour faire son choix. Il a également la possibilité de rajouter jusqu'à deux étages supplémentaires. Dans un second temps, le joueur doit faire décoller, si bien construite, sa fusée. Le but étant de la faire décoller et aller le plus haut possible. Nous avons rajouté quelques interractions supplémentaires afin de rendre le serious game plus vivant et interractif pour le joueur."
   },
   M1_Chat: {
     title: 'Application de chat',
